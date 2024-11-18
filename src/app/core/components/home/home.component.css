@@ -1,0 +1,118 @@
+.hero {
+    background: #f4f1f1; 
+    color: #333333;  
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #222222;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555555; 
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero .highlight {
+    color: #6439FF; 
+    font-weight: 700;
+}
+
+.hero .btn {
+    background: #6439FF; 
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #dcdcdc; 
+    color: #000000;
+    transform: translateY(-2px);
+}
+
+.hero .btn-secondary {
+    background: #ffcc00; 
+    color: #000000;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.hero .btn-secondary:hover {
+    background: #d88f00;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.animated-text {
+    display: inline-block;
+    animation: fadeInSlideUp 5s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem; 
+        margin-top: 200px;
+    }
+    .hero p {
+        font-size: 1rem; 
+        margin-bottom: 20px;
+    }
+    .hero .btn {
+        padding: 10px 20px; 
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 0.9rem;
+    }
+}

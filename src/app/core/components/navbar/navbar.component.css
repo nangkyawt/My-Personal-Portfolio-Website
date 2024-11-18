@@ -1,0 +1,82 @@
+/* Navbar Styling */
+.navbar {
+    background: #f4f1f1; 
+    color: #000000; 
+    padding: 15px 30px; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-brand {
+    color: #6439FF; 
+    font-weight: bold;
+    font-size: 26px; 
+    transition: color 0.3s ease;
+}
+
+.navbar-nav{
+    gap: 20px;
+}
+
+.navbar-brand:hover {
+    color: #4528A0; 
+}
+
+/* Navbar Links */
+.nav-item a {
+    color: #000000; 
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #ffffff; 
+    background-color: #6439FF; 
+    transform: translateY(-2px); 
+}
+
+.navbar-toggler {
+    border: 1px solid #6439FF; 
+    background-color: #ffffff; 
+    border-radius: 5px; }
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(100,57,255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    filter: brightness(1); 
+}
+
+
+.glassy-button {
+    background: transparent;
+    border: 2px solid #6439FF; 
+    color: #6439FF; 
+    padding: 5px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.glassy-button:hover {
+    background-color: #4528A0; 
+    color: white;
+    transform: translateY(-2px); 
+}
+
+.nav-item a.active {
+    color: #ffffff; 
+    background-color: #6439FF; 
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .nav-item a {
+        padding: 8px 12px; 
+        font-size: 14px; 
+    }
+}
