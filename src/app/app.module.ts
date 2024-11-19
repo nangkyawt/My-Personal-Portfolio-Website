@@ -7,6 +7,7 @@ import { HomeComponent } from './core/components/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { AboutmeComponent } from './core/components/aboutme/aboutme.component';
 import { ContactComponent } from './core/components/contact/contact.component';
+import { MyserviceComponent } from './core/components/myservice/myservice.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ContactComponent } from './core/components/contact/contact.component';
     HomeComponent,
     AboutmeComponent,
     ContactComponent,
+    MyserviceComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

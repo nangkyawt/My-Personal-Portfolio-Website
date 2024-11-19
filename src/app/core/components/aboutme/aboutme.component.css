@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Space between card and image */
+  gap: 20px; 
   height: 70vh;
   padding: 20px;
   background: #6c63ff; 
@@ -10,50 +10,49 @@
 }
 
 .about-card {
-  flex: 1; /* Allow the card to take up one portion of the available space */
-  max-width: 40%; /* Ensure the card doesn't become too wide */
-  background-color: #fff; /* White card */
-  color: #333; /* Text color inside the card */
-  border-radius: 15px; /* Rounded corners */
+  flex: 1; 
+  max-width: 40%;
+  background-color: #fff; 
+  color: #333; 
+  border-radius: 15px; 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
   padding: 30px;
   text-align: center;
   line-height: 1.6;
-  order: 2; /* Display the card second */
+  order: 2; 
   margin-bottom: 100px;
-  font-family: "Roboto", sans-serif; /* Change font style */
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
+  margin-left: 100px;
 }
 
 .about-card h3 {
   margin-bottom: 20px;
   font-size: 2rem;
-  color: #6c63ff; /* Accent color for the title */
+  color: #6c63ff; 
   text-transform: uppercase;
   font-family: "Poppins", sans-serif; 
   animation: fadeIn 1.5s ease-in-out;
 }
 
 .about-card p {
-  font-size: 1.1rem; /* Paragraph font size */
-  line-height: 1.8; /* Increase line height for better readability */
+  font-size: 1.1rem; 
+  line-height: 1.8; 
 }
 
-/* Image styling */
 .about-image {
-  flex: 1; /* Allow the image to take up the remaining space */
-  max-width: 40%; /* Limit the image width */
-  text-align: center; /* Center the image inside the div */
-  order: 1; /* Display the image first */
+  flex: 2; 
+  max-width: 30%; 
+  text-align: center; 
+  order: 1; 
 }
 
 .about-image img {
-  max-width: 100%; /* Make the image responsive */
+  max-width: 100%; 
   height: auto;
-  border-radius: 15px; /* Optional: Add rounded corners to the image */
+  border-radius: 15px;
 }
 
-/* Portfolio Link */
 .portfolio-link {
   color: #007bff;
   text-decoration: none;
