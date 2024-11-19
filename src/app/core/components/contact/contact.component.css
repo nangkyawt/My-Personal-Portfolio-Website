@@ -1,0 +1,52 @@
+.socialicons i{
+    font-size:30px;
+   
+}
+.background{
+    background-color: white;
+}
+.btn{
+    color: white;
+    background-color:#65451F;
+
+}
+
+h1{
+    color: black;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+h2{
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    color: rgb(202, 188, 188) ;
+    margin-top: 10px;
+}
+
+h2:hover {
+  color: #fcf9f6;
+  transform: translateY(-5px);
+
+}
+
+.social-icons-container {
+    display: flex;
+    justify-content: center;
+  margin-bottom: 3px;
+  }
+  
+  .social-icons-container a:hover {
+    display: flex;
+    justify-content: center;
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform: translateY(-5px);
+  
+  }
+.social-icons-container a {
+    margin-right: 10px;
+    color:rgb(202, 188, 188) ;
+    margin-bottom: 10px;
+  }

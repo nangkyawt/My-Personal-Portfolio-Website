@@ -12,9 +12,9 @@
           functional digital experiences.
         </p>
         <div class="mt-4">
-          <a href="#portfolio" class="btn btn-primary btn-lg me-2"
-            >View Portfolio</a
-          >
+          <button (click)="downloadCV()" class="btn btn-primary btn-lg">
+            Download CV
+          </button>
           <a href="#contact" class="btn btn-outline-primary btn-lg"
             >Contact Me</a
           >
@@ -31,3 +31,39 @@
     </div>
   </div>
 </section>
+<app-aboutme></app-aboutme>
+<!-- Skills & Tools Section -->
+<section id="skills" class="skills-section">
+  <h2>Skills & Tools</h2>
+  <div class="skills-container">
+    <div class="skill-item">
+      <img src="../.././../../assets/images/html.png" alt="HTML" />
+      <p>HTML</p>
+    </div>
+    <div class="skill-item">
+      <img src="../.././../../assets/images/css.png" alt="CSS" />
+      <p>CSS</p>
+    </div>
+    <div class="skill-item">
+      <img src="../.././../../assets/images/angular.png" alt="angular" />
+      <p>Angular</p>
+    </div>
+    <div class="skill-item">
+      <img src="../.././../../assets/images/typescript.png" alt="typescript" />
+      <p>Typescript</p>
+    </div>
+    <div class="skill-item">
+      <img src="../.././../../assets/images/bootstrap.png" alt="bootstrap" />
+      <p>Bootstrap</p>
+    </div>
+    <div class="skill-item">
+      <img src="../.././../../assets/images/nodejs.png" alt="nodejs" />
+      <p>Node.js</p>
+    </div>
+    <div class="skill-item">
+      <img src="../.././../../assets/images/postgres.png" alt="PostgresSQL" />
+      <p>PostgresSQL</p>
+    </div>
+  </div>
+</section>
+<app-contact></app-contact>

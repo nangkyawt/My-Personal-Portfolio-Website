@@ -49,6 +49,11 @@
     filter: brightness(1); 
 }
 
+.darkModeToggle{
+    border: 1px solid #6439FF; 
+    background-color: #ffffff; 
+    border-radius: 5px;
+}
 
 .glassy-button {
     background: transparent;
@@ -80,3 +85,10 @@
         font-size: 14px; 
     }
 }
+
+/* Dark mode styles */
+.navbar.dark-mode {
+    background: #333;
+    color: #fff; 
+    box-shadow: none; 
+  }

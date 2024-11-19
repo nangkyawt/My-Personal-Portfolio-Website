@@ -47,5 +47,17 @@
     >
       Login
     </button> -->
+    <!-- Dark Mode Toggle Button -->
+    <button
+      id="darkModeToggle"
+      class="darkModeToggle"
+      (click)="toggleDarkMode()"
+    >
+      <i
+        id="darkModeIcon"
+        class="fas"
+        [ngClass]="isDarkMode ? 'fa-sun' : 'fa-moon'"
+      ></i>
+    </button>
   </div>
 </nav>

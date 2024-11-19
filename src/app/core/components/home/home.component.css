@@ -7,6 +7,7 @@
     justify-content: center;
     text-align: center;
     padding: 0 20px;
+    z-index: 2;
 }
 
 .hero-content {
@@ -116,3 +117,78 @@
         font-size: 0.9rem;
     }
 }
+
+
+  /* Portfolio Link */
+  .portfolio-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .portfolio-link:hover {
+    text-decoration: underline;
+  }
+  
+     @media (max-width: 768px) {
+    .about-card {
+      padding: 20px;
+    }
+  }
+
+/* Skills & Tools Section CSS */
+
+.skills-section {
+    padding: 50px 20px;
+    background-color: #6439FF;
+    text-align: center;
+  }
+  
+  .skills-section h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: black;
+  }
+  
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .skill-item {
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    background-color: #7651fc;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .skill-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+    border-radius: 8px;
+  }
+  
+  .skill-item img:hover {
+    transform: scale(1.2);
+  }
+  
+  .skill-item p {
+    font-size: 1rem;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+  }
+  

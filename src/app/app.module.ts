@@ -5,9 +5,17 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './core/components/navbar/navbar.component';
 import { HomeComponent } from './core/components/home/home.component';
 import { FormsModule } from '@angular/forms';
+import { AboutmeComponent } from './core/components/aboutme/aboutme.component';
+import { ContactComponent } from './core/components/contact/contact.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    HomeComponent,
+    AboutmeComponent,
+    ContactComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
