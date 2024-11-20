@@ -1,4 +1,3 @@
-/* Navbar Styling */
 .navbar {
     background: #f4f1f1; 
     color: #000000; 
@@ -22,9 +21,9 @@
     color: #4528A0; 
 }
 
-/* Navbar Links */
+
 .nav-item a {
-    color: #000000; 
+    color: #6439FF; 
     font-weight: 500;
     text-decoration: none;
     font-size: 16px;
@@ -74,9 +73,16 @@
 }
 
 .nav-item a.active {
-    color: #ffffff; 
-    background-color: #6439FF; 
+    /* color: #ffffff;  */
+    /* background-color: #6439FF;  */
+    color: #6439FF;
     border-radius: 5px;
+}
+
+.nav-item a.active:hover {
+    background-color:  #6439FF; 
+    color: white;
+    transform: translateY(-2px); 
 }
 
 @media (max-width: 768px) {
@@ -86,7 +92,6 @@
     }
 }
 
-/* Dark mode styles */
 .navbar.dark-mode {
     background: #333;
     color: #fff; 

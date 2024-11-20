@@ -143,6 +143,10 @@ h2:hover {
 
 }
 
+/* p{
+  color:black;
+} */
+
 .social-icons-container {
     display: flex;
     justify-content: center;
