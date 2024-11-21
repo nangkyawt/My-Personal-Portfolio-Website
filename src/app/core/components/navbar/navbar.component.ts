@@ -15,12 +15,18 @@ export class NavbarComponent implements OnInit {
     }
   }
 
+  scrollToSection(sectionId: string): void {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
   toggleDarkMode() {
     console.log('Darkmode work');
     this.isDarkMode = !this.isDarkMode;
     document.body.classList.toggle('dark-mode', this.isDarkMode);
 
-    // Save the dark mode preference to local storage
     localStorage.setItem('darkMode', String(this.isDarkMode));
   }
 }

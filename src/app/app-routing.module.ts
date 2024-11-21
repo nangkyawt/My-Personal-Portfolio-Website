@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './core/components/home/home.component';
+import { AboutmeComponent } from './core/components/aboutme/aboutme.component';
+import { ContactComponent } from './core/components/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -12,6 +14,14 @@ const routes: Routes = [
     path: 'nangkyawthsuhlaing',
     component: HomeComponent,
   },
+  // {
+  //   path: 'about',
+  //   component: HomeComponent,
+  // },
+  // {
+  //   path: 'contact',
+  //   component: HomeComponent,
+  // },
   {
     path: '**',
     redirectTo: 'nangkyawthsuhlaing',
