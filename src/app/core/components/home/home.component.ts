@@ -58,4 +58,11 @@ export class HomeComponent {
     // Save the PDF with a filename
     doc.save('Nang_Kyawt_Hsu_Hlaing_CV.pdf');
   }
+
+  scrollToSection(sectionId: string): void {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }

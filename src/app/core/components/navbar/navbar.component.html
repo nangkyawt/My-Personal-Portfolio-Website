@@ -1,18 +1,8 @@
 <nav class="navbar navbar-expand-lg fixed-top mx-auto">
-  <div class="container-fluid">
-    <a class="navbar-brand d-flex align-items-center" href="#"> NK </a>
-
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <div
+    class="container-fluid d-flex align-items-center justify-content-between"
+  >
+    <a class="navbar-brand d-flex align-items-center">NK</a>
 
     <div
       class="collapse navbar-collapse justify-content-center"
@@ -54,24 +44,30 @@
       </ul>
     </div>
 
-    <!-- <button
-      class="btn btn-primary btn-sm glassy-button"
-      type="submit"
-      (click)="scrollToMenu()"
-    >
-      Login
-    </button> -->
-    <!-- Dark Mode Toggle Button -->
-    <button
-      id="darkModeToggle"
-      class="darkModeToggle"
-      (click)="toggleDarkMode()"
-    >
-      <i
-        id="darkModeIcon"
-        class="fas"
-        [ngClass]="isDarkMode ? 'fa-sun' : 'fa-moon'"
-      ></i>
-    </button>
+    <div class="d-flex align-items-center">
+      <button
+        id="darkModeToggle"
+        class="btn btn-outline-secondary btn-sm me-2"
+        (click)="toggleDarkMode()"
+      >
+        <i
+          id="darkModeIcon"
+          class="fas"
+          [ngClass]="isDarkMode ? 'fa-sun' : 'fa-moon'"
+        ></i>
+      </button>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
   </div>
 </nav>

@@ -85,6 +85,16 @@
     transform: translateY(-2px); 
 }
 
+
+#darkModeToggle {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .navbar-toggler {
+    border-color: transparent;
+  }
 @media (max-width: 768px) {
     .nav-item a {
         padding: 8px 12px; 

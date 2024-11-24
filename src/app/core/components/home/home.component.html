@@ -15,7 +15,11 @@
           <button (click)="downloadCV()" class="btn btn-primary btn-lg">
             <i class="fas fa-file-export"></i> Download CV
           </button>
-          <a href="#contact" class="btn btn-outline-primary btn-lg"
+          <a
+            href="#contact"
+            class="btn btn-outline-primary btn-lg"
+            (click)="scrollToSection('contact')"
+            routerLinkActive="active"
             >Contact Me</a
           >
         </div>
