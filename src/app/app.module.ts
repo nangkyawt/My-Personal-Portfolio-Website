@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { AboutmeComponent } from './core/components/aboutme/aboutme.component';
 import { ContactComponent } from './core/components/contact/contact.component';
 import { MyserviceComponent } from './core/components/myservice/myservice.component';
+import { MyprojectsComponent } from './myprojects/myprojects.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { MyserviceComponent } from './core/components/myservice/myservice.compon
     AboutmeComponent,
     ContactComponent,
     MyserviceComponent,
+    MyprojectsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

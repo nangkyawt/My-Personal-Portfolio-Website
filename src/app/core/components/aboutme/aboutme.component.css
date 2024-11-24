@@ -58,6 +58,10 @@
   margin-top: 10px;
 }
 
+.black-text {
+  color: black;
+}
+
 .about-text p {
   font-size: 1.2rem;
   line-height: 1.8;
@@ -76,7 +80,6 @@
   text-decoration: underline;
 }
 
-/* Keyframes for Fade-in Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -88,7 +91,6 @@
   }
 }
 
-/* Responsive Adjustments */
 @media (max-width: 992px) {
   .about-content {
     flex-wrap: wrap; 
