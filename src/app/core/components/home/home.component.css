@@ -16,7 +16,7 @@
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #222222;
     margin-bottom: 20px;
@@ -73,9 +73,15 @@
 }
 
 .animated-text {
+  .animated-text {
     display: inline-block;
     animation: fadeInSlideUp 5s ease-in-out forwards;
     opacity: 0;
+    white-space: nowrap; 
+    overflow-wrap: normal;
+    word-break: keep-all; 
+    font-size: 2.5rem; 
+}
 }
 
 @keyframes fadeInSlideUp {
@@ -94,7 +100,7 @@
 }
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem; 
         margin-top: 200px;
@@ -107,16 +113,7 @@
         padding: 10px 20px; 
         font-size: 0.9rem;
     }
-}
-
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 1rem;
-    }
-    .hero p {
-        font-size: 0.9rem;
-    }
-}
+} */
 
 .portfolio-link {
     color: #007bff;
@@ -126,12 +123,6 @@
   
   .portfolio-link:hover {
     text-decoration: underline;
-  }
-  
-     @media (max-width: 768px) {
-    .about-card {
-      padding: 20px;
-    }
   }
 
 .skills-section {
@@ -237,7 +228,7 @@
   }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .hero {
     height: auto;
     padding-top: 40px; 
@@ -262,10 +253,60 @@
     font-size: 0.9rem;
     margin-bottom: 50px;
   }
+  .hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  } */
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto; 
+    /* padding: 5px; */
+    text-align: center;
+    margin-top: 50px; 
+  }
+
+  .hero h1 {
+    font-size: 2rem; 
+    margin-top: 100px;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .hero img {
+    display: none;
+  }
+
+  .hero .btn {
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+  }
+  .animated-text {
+    font-size: 1.8rem; 
+}
 }
 
-.hero img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+    margin-top: 100px;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .hero .btn {
+    font-size: 0.7rem;
+    padding: 8px 12px;
+  }
+  .animated-text {
+    font-size: 1.5rem; 
+}
 }
