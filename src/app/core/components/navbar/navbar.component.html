@@ -6,6 +6,7 @@
 
     <div
       class="collapse navbar-collapse justify-content-center"
+      [ngClass]="{ show: isMenuOpen }"
       id="navbarNavDropdown"
     >
       <ul class="navbar-nav">
@@ -57,13 +58,13 @@
         ></i>
       </button>
 
+      <!-- Hamburger Menu Button -->
       <button
         class="navbar-toggler"
         type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavDropdown"
+        (click)="toggleMenu()"
         aria-controls="navbarNavDropdown"
-        aria-expanded="false"
+        [attr.aria-expanded]="isMenuOpen ? 'true' : 'false'"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>

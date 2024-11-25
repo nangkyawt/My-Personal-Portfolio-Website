@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+  }
+  
+  body.dark-mode a {
+    color: #bb86fc;
+  }
+  
+  body.dark-mode button {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #444444;
+  }
+  
+  /* Component-specific adjustments */
+  body.dark-mode .navbar {
+    background-color: #333333;
+  }
+  
+  body.dark-mode .hero {
+    background-color: #1e1e1e;
+    
+  }
+  
+  /* body.dark-mode .greeting {
+    background-color: #fbf8f8;
+    
+  } */
+
+  body.dark-mode .skills-section {
+    background-color: #333333;
+    color: #e0e0e0;
+  }
+  
+  /* body.dark-mode .service-item {
+    background-color: #333333;
+    color: #ffffff;
+  } */
+  
+  body.dark-mode .projects-section{
+    background-color: #333333;
+    color: #ffffff;
+  }
+
+  body.dark-mode .contact-section {
+    background-color: #333333;
+    color: #ffffff;
+  }
+
+  
