@@ -31,7 +31,14 @@ export class NavbarComponent implements OnInit {
     localStorage.setItem('darkMode', String(this.isDarkMode));
   }
   toggleMenu() {
-    // Toggle the menu visibility for small screens
     this.isMenuOpen = !this.isMenuOpen;
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    if (navbarCollapse) {
+      if (this.isMenuOpen) {
+        navbarCollapse.classList.add('show');
+      } else {
+        navbarCollapse.classList.remove('show');
+      }
+    }
   }
 }

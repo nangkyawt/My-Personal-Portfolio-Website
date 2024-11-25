@@ -45,10 +45,11 @@
       </ul>
     </div>
 
+    <!-- Menu and Dark Mode Toggles -->
     <div class="d-flex align-items-center">
       <button
         id="darkModeToggle"
-        class="btn btn-outline-secondary btn-sm me-2"
+        class="darkmodetoggle"
         (click)="toggleDarkMode()"
       >
         <i
@@ -57,17 +58,15 @@
           [ngClass]="isDarkMode ? 'fa-sun' : 'fa-moon'"
         ></i>
       </button>
-
-      <!-- Hamburger Menu Button -->
       <button
-        class="navbar-toggler"
+        class="menutoggle navbar-toggler"
         type="button"
+        [attr.aria-expanded]="isMenuOpen"
         (click)="toggleMenu()"
-        aria-controls="navbarNavDropdown"
-        [attr.aria-expanded]="isMenuOpen ? 'true' : 'false'"
-        aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <i *ngIf="!isMenuOpen" class="fas fa-bars"></i>
+
+        <i *ngIf="isMenuOpen" class="fas fa-times"></i>
       </button>
     </div>
   </div>
