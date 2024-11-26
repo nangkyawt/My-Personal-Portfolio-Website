@@ -8,10 +8,6 @@
     background-color: #333333;
   }
   
-  /* body.dark-mode .navbar  {
-    transition: background-color 0.3s ease, color 0.3s ease;
-} */
-
   body.dark-mode .hero {
     background-color: #1e1e1e;
     
@@ -38,15 +34,18 @@
   body.dark-mode #skills h2 {
     color: #6439FF; 
   }
+
   body.dark-mode .projects-section{
     background-color: #333333;
     color: #ffffff;
   }
 
 
-  #projects .section-title {
-    color: #000000; 
+  body.dark-mode #projects p {
+    color: whitesmoke; 
   }
+
+  
  
   body.dark-mode #projects .section-title {
     color: #6439FF;
