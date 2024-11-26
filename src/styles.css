@@ -3,12 +3,15 @@
     color: #ffffff;
     border: 1px solid #444444;
   }
-  
-  /* Component-specific adjustments */
+
   body.dark-mode .navbar {
     background-color: #333333;
   }
   
+  /* body.dark-mode .navbar  {
+    transition: background-color 0.3s ease, color 0.3s ease;
+} */
+
   body.dark-mode .hero {
     background-color: #1e1e1e;
     
@@ -29,12 +32,11 @@
   } 
 
   #skills h2 {
-    color: #000000; /* Black text */
+    color: #000000;
   }
-  
-  /* Dark mode */
+
   body.dark-mode #skills h2 {
-    color: #6439FF; /* White text */
+    color: #6439FF; 
   }
   body.dark-mode .projects-section{
     background-color: #333333;
@@ -43,16 +45,18 @@
 
 
   #projects .section-title {
-    color: #000000; /* Black */
+    color: #000000; 
   }
-  
-  /* Dark mode styles */
+ 
   body.dark-mode #projects .section-title {
-    color: #6439FF; /* White */
+    color: #6439FF;
   }
 
-  /* body.dark-mode .contact-section {
-    background-color: #333333;
-    color: #ffffff;
-  } */
+ .dark-mode .project-content {
+  background-color: #2c2c2c; 
+  border: 1px solid #2c2c2c;
+}
 
+.dark-mode #projects h2 {
+  color: #ffffff;
+}

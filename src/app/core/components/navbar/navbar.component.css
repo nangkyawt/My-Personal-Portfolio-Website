@@ -45,7 +45,6 @@
 
 .menutoggle{
     display: none;
-    /* background-color: #ffffff;  */
     border-radius: 5px;
     padding: 8px; 
     transition: all 0.3s ease; 
@@ -64,19 +63,18 @@
   }
 
 
-.nav-item a.active {
-    /* color: #ffffff;  */
-    /* background-color: #6439FF;  */
-    color: #6439FF;
-    border-radius: 5px;
-}
-
 .nav-item a.active:hover {
     background-color:  #6439FF; 
     color: white;
     transform: translateY(-2px); 
 }
 
+/* .nav-item a, .nav-item a.active {
+    padding: 5px;
+    font-size: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+} */
 
 #darkModeToggle {
     margin-right: 10px;
@@ -91,34 +89,34 @@
   }
   @media (max-width: 768px) {
     .navbar-collapse {
-        background-color: #f4f1f1; /* Match the navbar background */
-        padding: 15px; /* Add spacing inside the dropdown */
-        border-radius: 5px; /* Smooth rounded corners */
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+        background-color: #f4f1f1; 
+        padding: 5px; 
+        border-radius: 5px; 
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); 
         transition: all 0.3s ease;
     }
 
     .navbar-nav {
-        flex-direction: column; /* Stack items vertically */
-        gap: 10px; /* Add spacing between items */
+        flex-direction: column; 
+        gap: 5px; 
     }
 
     .nav-item a {
-        padding: 10px; /* Adjust padding for better touch targets */
-        font-size: 16px; /* Consistent font size */
-        text-align: center; /* Center-align text */
-        background-color: #ffffff; /* Keep consistent style */
-        border: 1px solid transparent; /* Add border for hover effect */
+        padding: 10px;
+        font-size: 15px; 
+        text-align: center; 
+        background-color: #ffffff; 
+        border: 1px solid transparent; 
         transition: all 0.3s ease;
     }
 
     .nav-item a:hover {
-        border-color: #6439FF; /* Highlight border on hover */
-        transform: translateY(-2px); /* Lift effect */
+        border-color: #6439FF; 
+        transform: translateY(-2px); 
     }
 
     .nav-item a.active {
-        border: 1px solid #6439FF; /* Add border to active links */
+        border: 1px solid #6439FF; 
         background-color: #6439FF;
         color: #ffffff;
         border-radius: 5px;
@@ -134,3 +132,4 @@
         z-index: 1050; 
       }  
 }
+
