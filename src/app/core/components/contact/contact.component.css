@@ -151,6 +151,7 @@ h2:hover {
   display: flex;
   justify-content: center;
   gap: 5px;
+  margin-bottom: 50px;
   }
   
   .social-icons-container a:hover {
@@ -163,7 +164,7 @@ h2:hover {
 .social-icons-container a {
     margin-right: 10px;
     color:rgb(202, 188, 188) ;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .social-icons {
@@ -177,6 +178,7 @@ h2:hover {
     display: flex;
     justify-content: center;
     gap: 3px;
+    margin-bottom: 20px;
     }
       
 }
