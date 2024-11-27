@@ -36,41 +36,34 @@ export class AppComponent implements OnInit {
   // }
 
   ngOnInit(): void {
-    // Flag to check if it's the initial load
     const isInitialLoad = !sessionStorage.getItem('initialLoadDone');
 
     if (isInitialLoad) {
-      // First load: Take 10 seconds
       sessionStorage.setItem('initialLoadDone', 'true');
       this.preloaderService.show();
 
       setTimeout(() => {
         this.preloaderService.hide();
-      }, 10000); // 10 seconds
+      }, 10000);
     } else {
-      // Subsequent refresh or navigation: Default 5 seconds
       this.preloaderService.show();
 
       setTimeout(() => {
         this.preloaderService.hide();
-      }, 5000); // 5 seconds
+      }, 5000);
     }
 
-    // Subscribe to the loader service for real-time loading state updates
     this.preloaderService.isLoading$.subscribe((state: boolean) => {
       this.isLoading = state;
     });
 
-    // Handle router events for navigation
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationStart) {
-        // Show the loader on route change
         this.preloaderService.show();
       }
 
       if (event instanceof NavigationEnd) {
-        // Hide the loader after 5 seconds for navigations
-        setTimeout(() => this.preloaderService.hide(), 500); // Short delay for navigation transitions
+        setTimeout(() => this.preloaderService.hide(), 500);
       }
     });
   }
