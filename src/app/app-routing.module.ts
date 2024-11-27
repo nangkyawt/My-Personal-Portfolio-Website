@@ -14,14 +14,6 @@ const routes: Routes = [
     path: 'nangkyawthsuhlaing',
     component: HomeComponent,
   },
-  // {
-  //   path: 'about',
-  //   component: HomeComponent,
-  // },
-  // {
-  //   path: 'contact',
-  //   component: HomeComponent,
-  // },
   {
     path: '**',
     redirectTo: 'nangkyawthsuhlaing',
