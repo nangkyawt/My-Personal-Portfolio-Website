@@ -10,30 +10,11 @@ import { PreloaderService } from './services/preloader.service';
 export class AppComponent implements OnInit {
   title = 'portfolio';
   isLoading: any;
-
+  AOS: any;
   constructor(
     private router: Router,
     private preloaderService: PreloaderService
   ) {}
-
-  // ngOnInit(): void {
-  //   // Subscribe to PreloaderService observable
-  //   this.preloaderService.isLoading$.subscribe((state: boolean) => {
-  //     this.isLoading = state;
-  //   });
-
-  //   // Listen to router events for route changes
-  //   this.router.events.subscribe((event) => {
-  //     if (event instanceof NavigationStart) {
-  //       // Show the preloader when navigation starts
-  //       this.preloaderService.show();
-  //     }
-
-  //     if (event instanceof NavigationEnd) {
-  //       setTimeout(() => this.preloaderService.hide(), 1000); // Adjust delay
-  //     }
-  //   });
-  // }
 
   ngOnInit(): void {
     const isInitialLoad = !sessionStorage.getItem('initialLoadDone');
@@ -64,6 +45,17 @@ export class AppComponent implements OnInit {
 
       if (event instanceof NavigationEnd) {
         setTimeout(() => this.preloaderService.hide(), 500);
+      }
+    });
+
+    this.AOS.init({
+      duration: 1200, // Adjust duration as needed
+      once: true, // Ensures animations happen only once
+    });
+
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.AOS.refresh(); // Refresh AOS after navigation
       }
     });
   }

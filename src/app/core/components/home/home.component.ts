@@ -7,6 +7,7 @@ import { jsPDF } from 'jspdf';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
+  skills: any;
   downloadCV(): void {
     console.log('Download CV');
     const doc = new jsPDF();

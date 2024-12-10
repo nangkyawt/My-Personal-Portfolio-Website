@@ -88,62 +88,17 @@
 .navbar-toggler {
     border-color: transparent;
   }
-  
-  /* @media (max-width: 768px) {
-    .navbar-collapse {
-        background-color: #f4f1f1; 
-        padding: 3px; 
-        border-radius: 5px; 
-        transition: all 0.3s ease;
-    }
-
-    .navbar-nav {
-        flex-direction: column; 
-        gap: 5px; 
-    }
-
-    .nav-item a {
-        padding: 5px;
-        font-size: 15px; 
-        text-align: center; 
-        background-color: #ffffff; 
-        border: 1px solid transparent; 
-        transition: all 0.3s ease;
-    }
-
-    .nav-item a:hover {
-        border-color: #6439FF; 
-        transform: translateY(-2px); 
-    }
-
-    .nav-item a.active {
-        border:  solid #6439FF; 
-        background-color: #6439FF;
-        color: #ffffff;
-        border-radius: 5px;
-    }
-    .menutoggle {
-        display: block; 
-    }
-
-    .darkmodetoggle {
-        position: absolute;
-        top: 15px; 
-        right: 60px; 
-        z-index: 1050; 
-    }  
-} */
 
 @media (max-width: 768px) {
     .navbar-collapse {
         position: absolute;
-        top: 60px; /* Adjust based on your navbar height */
-        right: 10px; /* Position near the menu toggle */
-        background-color: rgba(255, 255, 255, 0.95); /* Light, slightly transparent */
+        top: 60px;
+        right: 10px; 
+        background-color: rgba(255, 255, 255, 0.95);
         border-radius: 8px;
-        width: 250px; /* Compact width */
-        max-height: 300px; /* Restrict height */
-        overflow-y: auto; /* Scrollable for long menus */
+        width: 250px; 
+        max-height: 300px; 
+        overflow-y: auto; 
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         z-index: 1050;
         padding: 10px;
@@ -152,37 +107,35 @@
         transition: transform 0.3s ease-in-out;
     }
      .navbar-collapse.show {
-        transform: scale(1); /* Expand dropdown */
+        transform: scale(1);
     }
 
     .navbar-nav {
-        flex-direction: column; /* Stack items vertically */
-        gap: 10px; /* Add space between items */
-        align-items: center; /* Center the menu items */
+        flex-direction: column; 
+        gap: 10px; 
+        align-items: center; 
     }
 
     .nav-item a {
-        padding: 5px 10px; /* Compact padding */
-        font-size: 14px; /* Slightly smaller text */
+        padding: 5px 10px; 
+        font-size: 14px; 
         text-align: center;
-        background-color: rgba(255, 255, 255, 0.8); /* Light frosted background */
-        /* Subtle border */
-        color: #6439FF; /* Consistent text color */
-        border-radius: 5px; /* Rounded buttons */
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #6439FF; 
+        border-radius: 5px; 
         transition: all 0.3s ease;
-        backdrop-filter: blur(5px); /* Glass effect */
+        backdrop-filter: blur(5px); 
     }
     .nav-item a:hover {
-        background: rgba(100, 57, 255, 0.1); /* Hover effect */
+        background: rgba(100, 57, 255, 0.1); 
         color: #6439FF;
         border-color: #6439FF;
     }
     .nav-item a.active {
-        background-color: rgba(100, 57, 255, 0.7); /* Active state background */
+        background-color: rgba(100, 57, 255, 0.7); 
         color: #fff;
         border-radius: 5px;
-        /* border: solid 1px #6439FF; */
-    }
+     }
   
     .menutoggle {
         display: block;
@@ -193,7 +146,7 @@
         cursor: pointer;
     }
     .menutoggle:hover {
-        transform: scale(1.1); /* Slight zoom on hover */
+        transform: scale(1.1);
     }
 
     .darkmodetoggle {

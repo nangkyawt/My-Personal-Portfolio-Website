@@ -5,7 +5,7 @@
 }
 
 .services-section h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #222222;
   margin-bottom: 5px;
   font-family: "Poppins", sans-serif;
@@ -40,7 +40,7 @@
   margin-bottom: 20px;
 }
 
-.service-item h3 {
+.service-item h2 {
   font-size: 1.5rem;
   color: #6c63ff;
   margin-bottom: 15px;
@@ -84,7 +84,7 @@
     margin-bottom: 15px;
   }
 
-  .service-item h3 {
+  .service-item h2 {
     font-size: 1.2rem;
   }
 

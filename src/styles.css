@@ -9,7 +9,7 @@
   }
   
   body.dark-mode .hero {
-    background-color: #1e1e1e;
+    background-color: #121212;
     
   }
   
@@ -22,8 +22,34 @@
    }
  
 
+/* About me dark */
+body.dark-mode .aboutme-section {
+  background: linear-gradient(135deg, #121212, #1e1e1e); 
+  color: #e0e0e0;
+}
+
+body.dark-mode .about-content {
+  background: #1c1c1c; 
+  border: 1px solid #333; 
+}
+
+body.dark-mode #about h1 {
+  color: #6439FF; 
+}
+
+body.dark-mode .about-text p {
+  color: #cccccc; }
+
+body.dark-mode .about-image img {
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+body.dark-mode .about-image img:hover {
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.5);
+}
+
   body.dark-mode .skills-section {
-    background-color: #333333;
+    background-color:#121212;
   
   } 
 
@@ -36,17 +62,15 @@
   }
 
   body.dark-mode .projects-section{
-    background-color: #333333;
-    color: #ffffff;
+    background-color: #121212;
+    color: #cccccc;
   }
 
 
   body.dark-mode #projects p {
-    color: whitesmoke; 
+    color: #cccccc; 
   }
 
-  
- 
   body.dark-mode #projects .section-title {
     color: #6439FF;
   }
@@ -54,9 +78,74 @@
  .dark-mode .project-content {
   background-color: #2c2c2c; 
   border: 1px solid rgba(255, 255, 255, 0.3);
-}
+ }
 
 .dark-mode #projects h2 {
   color: #ffffff;
 }
 
+body.dark-mode .services-section {
+  background: #333333; 
+}
+
+body.dark-mode #services h1 {
+  color:   #6439FF;
+}
+
+body.dark-mode .service-item {
+  background: #1e1e1e; 
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode #services p {
+  color: #cccccc; }
+
+/* contact   */
+body.dark-mode .contact-section {
+  background: #333333; /* Dark background for the section */
+}
+
+body.dark-mode .contact-description {
+  color: #e0e0e0; /* Light gray text for visibility */
+}
+
+body.dark-mode .contact-container {
+  background: none;}
+
+body.dark-mode .contact-form {
+  background: #1e1e1e; 
+  color: #e0e0e0; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .form-group label {
+  color: #bbb; }
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+  background: #2a2a2a; 
+  color: #fff;
+  border-color: #444; }
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus {
+  border-color: #6c63ff;
+}
+
+body.dark-mode .btn-submit {
+  background: #6c63ff; 
+  color: #fff; 
+}
+
+
+body.dark-mode #contactme h1{
+  color: #5347d9;
+}
+
+body.dark-mode .social-icons-container{
+  background-color: #121212;
+}
+
+body.dark-mode .socialicons{
+  background-color:  #121212;
+}
