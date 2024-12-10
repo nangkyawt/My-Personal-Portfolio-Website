@@ -102,11 +102,11 @@ body.dark-mode #services p {
 
 /* contact   */
 body.dark-mode .contact-section {
-  background: #333333; /* Dark background for the section */
+  background: #121212;
 }
 
 body.dark-mode .contact-description {
-  color: #e0e0e0; /* Light gray text for visibility */
+  color: #e0e0e0;
 }
 
 body.dark-mode .contact-container {

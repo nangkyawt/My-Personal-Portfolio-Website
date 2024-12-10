@@ -12,51 +12,94 @@ export class HomeComponent {
     console.log('Download CV');
     const doc = new jsPDF();
 
-    // Set title (name)
+    // Header: Name and Job Title
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(24);
-    doc.text('Nang Kyawt Hsu Hlaing', 20, 20);
+    doc.text('Nang Kyawt Hsu Hlaing', 105, 20, { align: 'center' });
 
-    // Job title and contact info
-    doc.setFont('helvetica', 'normal');
+    doc.setFont('helvetica', 'italic');
     doc.setFontSize(16);
-    doc.text('Junior MEAN Stack Developer', 20, 30);
-    doc.text(
-      'Email: nangkyawthsuhlaing@gmail.com | Phone: 09-752961610',
-      20,
-      40
-    );
+    doc.text('Junior MEAN Stack Developer', 105, 30, { align: 'center' });
 
-    // Add spacing before sections
-    doc.setFontSize(14);
-    doc.text('Skills:', 20, 55);
+    // Contact Information
+    doc.setFont('helvetica', 'normal');
     doc.setFontSize(12);
-    doc.text('- Problem-Solving', 20, 65);
-    doc.text('- Teamwork', 20, 75);
-    doc.text('- Effective communication', 20, 85);
-    doc.text('- Time Management', 20, 95);
+    doc.text('Email: nangkyawthsuhlaing@gmail.com', 105, 40, {
+      align: 'center',
+    });
+    doc.text('Phone: 09-752961610', 105, 47, { align: 'center' });
 
-    // Add spacing before technical skills
+    // Horizontal Line
+    doc.setLineWidth(0.5);
+    doc.line(15, 55, 195, 55);
+
+    // Profile Section
+    doc.setFont('helvetica', 'bold');
     doc.setFontSize(14);
-    doc.text('Technical Skills:', 20, 110);
-    doc.setFontSize(12);
-    doc.text('- Angular', 20, 120);
-    doc.text('- Node.js', 20, 130);
-    doc.text('- PostgreSQL', 20, 140);
-    doc.text('- Bootstrap', 20, 150);
+    doc.text('Profile', 20, 65);
 
-    // Add experience section
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(12);
+    const profile = `
+  I am an adaptable, extroverted, and team-oriented individual with experience in fostering 
+  positive work environments. With strong communication, collaboration, and 
+  problem-solving skills, I am eager to contribute to creating an inclusive 
+  and supportive culture. I’m excited to bring my skills to the People and 
+  Culture team and support initiatives that enhance workplace culture.
+    `;
+    doc.text(profile, 25, 75, { maxWidth: 170, align: 'left' });
+
+    // Education Section
+    doc.setFont('helvetica', 'bold');
     doc.setFontSize(14);
-    doc.text('Experience:', 20, 165);
-    doc.setFontSize(12);
-    doc.text(
-      'During my internship at Myanmar Information Technology, I developed a Student Form app using Angular, Node.js, and PostgreSQL.',
-      20,
-      175,
-      { maxWidth: 170 }
-    );
+    doc.text('Education', 20, 120);
 
-    // Save the PDF with a filename
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(12);
+    doc.text('- Bachelor of Science in Mathematics (2018-2019)', 25, 130);
+    doc.text('- Mandalar University', 25, 137);
+
+    doc.text('- University of The People (2024)', 25, 150);
+    doc.text('- Languages: Myanmar and English', 25, 157);
+
+    // Skills Section
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(14);
+    doc.text('Skills', 20, 170);
+
+    const skills = [
+      '- Problem-Solving',
+      '- Teamwork',
+      '- Effective Communication',
+      '- Time Management',
+    ];
+    skills.forEach((skill, index) => {
+      doc.text(skill, 25, 180 + index * 10);
+    });
+
+    // Technical Skills Section
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(14);
+    doc.text('Technical Skills', 20, 220);
+
+    const technicalSkills = [
+      '- Angular',
+      '- Node.js',
+      '- PostgreSQL',
+      '- Bootstrap',
+    ];
+    technicalSkills.forEach((techSkill, index) => {
+      doc.text(techSkill, 25, 230 + index * 10);
+    });
+
+    // Footer
+    doc.setFont('helvetica', 'italic');
+    doc.setFontSize(10);
+    doc.text('Generated with jsPDF - Nang Kyawt Hsu Hlaing', 105, 290, {
+      align: 'center',
+    });
+
+    // Save the PDF
     doc.save('Nang_Kyawt_Hsu_Hlaing_CV.pdf');
   }
 
