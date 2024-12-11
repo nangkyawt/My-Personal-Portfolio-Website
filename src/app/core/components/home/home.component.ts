@@ -60,12 +60,12 @@ I am eager to bring my skills and outgoing nature to a junior developer role, co
     );
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(14);
-    doc.text('Languages: Myanmar and English', 20, 175); // Adjusted to move further down
+    doc.text('Languages: Myanmar and English', 20, 175);
 
     // Skills Section
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(14);
-    doc.text('Skills', 20, 185); // Moved this down a little
+    doc.text('Skills', 20, 185);
 
     doc.setFont('helvetica', 'normal');
     const skills = [
@@ -75,13 +75,13 @@ I am eager to bring my skills and outgoing nature to a junior developer role, co
       '- Time Management',
     ];
     skills.forEach((skill, index) => {
-      doc.text(skill, 25, 195 + index * 10); // More spacing for skills
+      doc.text(skill, 25, 195 + index * 10);
     });
 
     // Technical Skills Section
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(14);
-    doc.text('Technical Skills', 20, 235); // Moved this section further down
+    doc.text('Technical Skills', 20, 235);
 
     doc.setFont('helvetica', 'normal');
     const technicalSkills = [
@@ -91,7 +91,7 @@ I am eager to bring my skills and outgoing nature to a junior developer role, co
       '- Bootstrap',
     ];
     technicalSkills.forEach((techSkill, index) => {
-      doc.text(techSkill, 25, 245 + index * 10); // More spacing for technical skills
+      doc.text(techSkill, 25, 245 + index * 10);
     });
 
     // Footer
@@ -101,7 +101,6 @@ I am eager to bring my skills and outgoing nature to a junior developer role, co
       align: 'center',
     });
 
-    // Footer contact information (Moved down further)
     doc.text(
       'For more information, contact: nangkyawthsuhlaing@gmail.com',
       105,
