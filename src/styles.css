@@ -5,11 +5,15 @@
   }
 
   body.dark-mode .navbar {
-    background-color: #333333;
+    background: rgba(10, 20, 59, 0.25); /* Same glass navy background */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18); /* Frosty bottom border */
+    backdrop-filter: blur(15px); /* Glass blur effect */
+    -webkit-backdrop-filter: blur(15px); /* Safari support */
+    box-shadow: 0 4px 30px rgba(31, 38, 135, 0.37); /* Soft glassy shadow */
   }
   
   body.dark-mode .hero {
-    background-color: #121212;
+    background-color: #160F30;
     
   }
   
@@ -24,13 +28,22 @@
 
 /* About me dark */
 body.dark-mode .aboutme-section {
-  background: linear-gradient(135deg, #121212, #1e1e1e); 
+  background: #160F30; 
   color: #e0e0e0;
 }
 
-body.dark-mode .about-content {
+/* body.dark-mode .about-content {
   background: #1c1c1c; 
   border: 1px solid #333; 
+} */
+
+body.dark-mode .about-content {
+  background: rgba(10, 20, 59, 0.25); /* Same deep navy glass color */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Soft frosty border */
+  backdrop-filter: blur(15px); /* Blur behind it */
+  -webkit-backdrop-filter: blur(15px); /* Safari browser support */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Nice soft shadow */
+  border-radius: 16px; /* Round corners for soft glass look */
 }
 
 body.dark-mode #about h1 {
@@ -49,7 +62,7 @@ body.dark-mode .about-image img:hover {
 }
 
   body.dark-mode .skills-section {
-    background-color:#121212;
+    background-color:#160F30;
   
   } 
 
@@ -62,30 +75,38 @@ body.dark-mode .about-image img:hover {
   }
 
   body.dark-mode .projects-section{
-    background-color: #121212;
+    background-color: #160F30;
     color: #cccccc;
   }
 
 
   body.dark-mode #projects p {
-    color: #cccccc; 
+    color: black; 
   }
 
   body.dark-mode #projects .section-title {
     color: #6439FF;
   }
 
- .dark-mode .project-content {
+ /* .dark-mode .project-content {
   background-color: #2c2c2c; 
   border: 1px solid rgba(255, 255, 255, 0.3);
- }
+ } */
 
+ .dark-mode .project-content {
+  background: rgba(10, 20, 59, 0.25); /* Deep navy blue with some transparency */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Light frosty border */
+  backdrop-filter: blur(15px); /* Stronger blur behind */
+  -webkit-backdrop-filter: blur(15px); /* Safari support */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Soft glowing shadow */
+  border-radius: 16px; /* Smooth corners */
+}
 .dark-mode #projects h2 {
-  color: #ffffff;
+  color: #0c0b0b;
 }
 
 body.dark-mode .services-section {
-  background: #333333; 
+  background: #160F30; 
 }
 
 body.dark-mode #services h1 {
@@ -93,8 +114,13 @@ body.dark-mode #services h1 {
 }
 
 body.dark-mode .service-item {
-  background: #1e1e1e; 
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  background: rgba(10, 20, 59, 0.25); /* Same deep navy transparent glass */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Frosty border */
+  backdrop-filter: blur(15px); /* Strong blur effect */
+  -webkit-backdrop-filter: blur(15px); /* Safari support */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Glowing shadow */
+  border-radius: 16px; /* Smooth rounded corners */
+  padding: 20px; /* Optional: more spacing inside */
 }
 
 body.dark-mode #services p {
@@ -102,7 +128,7 @@ body.dark-mode #services p {
 
 /* contact   */
 body.dark-mode .contact-section {
-  background: #121212;
+  background: #160F30;
 }
 
 body.dark-mode .contact-description {
@@ -112,40 +138,70 @@ body.dark-mode .contact-description {
 body.dark-mode .contact-container {
   background: none;}
 
-body.dark-mode .contact-form {
+/* body.dark-mode .contact-form {
   background: #1e1e1e; 
   color: #e0e0e0; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+} */
+
+body.dark-mode .contact-form {
+  background: rgba(10, 20, 59, 0.25); /* Deep navy glass background */
+  color: #e0e0e0; /* Light text stays */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Frosty border */
+  backdrop-filter: blur(15px); /* Blur behind */
+  -webkit-backdrop-filter: blur(15px); /* Safari support */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Soft glowing shadow */
+  border-radius: 16px; /* Smooth rounded corners */
+  padding: 20px; /* Good space for form fields */
 }
 
 body.dark-mode .form-group label {
-  color:  #cccccc; }
+  color: #cccccc; /* Keep this — looks good */
+}
 
 body.dark-mode .form-group input,
 body.dark-mode .form-group textarea {
-  background: #2a2a2a; 
-  color: #fff;
-  border-color: #444; }
+  background: rgba(10, 20, 59, 0.25); /* Same glass navy background */
+  color: #ffffff; /* Text stays white */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Frosty light border */
+  backdrop-filter: blur(10px); /* Light blur inside inputs */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 12px; /* Softer rounded corners */
+  padding: 10px 15px; /* Nice padding inside inputs */
+}
 
 body.dark-mode .form-group input:focus,
 body.dark-mode .form-group textarea:focus {
-  border-color: #6c63ff;
+  border-color: #6c63ff; /* Keep your highlight color */
+  outline: none; /* Clean focus outline */
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.6); /* Glow effect on focus */
 }
 
 body.dark-mode .btn-submit {
-  background: #6c63ff; 
-  color: #fff; 
+  background: rgba(108, 99, 255, 0.8); /* Soft purple glass button */
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode .btn-submit:hover {
+  background: rgba(108, 99, 255, 1); /* Brighter on hover */
+  box-shadow: 0 4px 15px rgba(108, 99, 255, 0.6); /* Glowing button hover */
 }
 
 
-body.dark-mode #contactme h1{
-  color: #5347d9;
+body.dark-mode #contactme h1 {
+  color: #6c63ff; /* Use the same soft purple as your highlight color */
 }
 
-body.dark-mode .social-icons-container{
-  background-color: #121212;
+body.dark-mode .social-icons-container {
+  background-color: #0D0821; /* Darker color to match other sections */
 }
 
-body.dark-mode .socialicons{
-  background-color:  #121212;
+body.dark-mode .socialicons {
+  background-color: #0D0821; /* Darker color to match other sections */
 }
