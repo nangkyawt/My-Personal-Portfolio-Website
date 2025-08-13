@@ -182,6 +182,18 @@ h2:hover {
     justify-content: center;
     gap: 3px;
     margin-bottom: 20px;
-    }
-      
+  }
+
+  .contact-container {
+    flex-direction: column; /* stack items vertically */
+    align-items: center;    /* center horizontally */
+    gap: 15px;              /* reduce spacing on mobile */
+  }
+
+  .contact-form {
+    margin-left: 0;         /* remove extra margin */
+    width: 100%;
+    max-width: 90%;         /* padding from screen edges */
+  }
 }
+
