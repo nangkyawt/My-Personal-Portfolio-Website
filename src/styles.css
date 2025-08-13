@@ -289,3 +289,23 @@ body.dark-mode .btn-primary:hover {
   border: 1px solid #6439ff;
 }
 
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #ddd;
+  transition: border-color 0.3s ease;
+  color: #ffffff !important; 
+  background-color: inherit;
+}
+
+body.dark-mode .form-group label {
+  font-size: 0.9rem;
+  font-weight: bold;
+color: #ffffff !important; 
+}
