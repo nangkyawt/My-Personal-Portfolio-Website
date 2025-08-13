@@ -2,22 +2,46 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
-  width: 50px;
-  height: 50px;
+  width: 35px;   
+  height: 35px;
   cursor: pointer;
   z-index: 1000;
+  transition: transform 0.3s ease;
 }
+
 
 .floating-home img {
   width: 100%;
   height: 100%;
+  animation: float-spin 4s linear infinite; 
 }
+
+
+.floating-home:hover {
+  animation: wiggle 0.5s ease-in-out;
+}
+
 
 .floating-home.spinning img {
-  animation: spin 1s linear;
+  animation: fast-spin 1s linear infinite;
 }
 
-@keyframes spin {
+
+@keyframes float-spin {
+  from { transform: rotate(0deg) scale(1); }
+  to { transform: rotate(360deg) scale(1); }
+}
+
+
+@keyframes fast-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg) scale(1.05); }
+  25% { transform: rotate(-10deg) scale(1.05); }
+  50% { transform: rotate(10deg) scale(1.05); }
+  75% { transform: rotate(-10deg) scale(1.05); }
 }

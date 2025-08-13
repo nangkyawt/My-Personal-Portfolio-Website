@@ -1,6 +1,10 @@
 .projects-section {
   padding: 60px 20px;
-  background-color: #f9f9f9;
+  /* background-image: url("../../assets/images/projects-bg-hd.jpg"); */
+  background-size: cover;        /* Fills the section without stretching */
+  background-position: center;   /* Keeps focus centered */
+  background-repeat: no-repeat;
+  background-attachment: fixed;  /* Optional: Parallax-like effect on desktop */
 }
 
 .container {
@@ -89,5 +93,11 @@
 @media (max-width: 576px) {
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .projects-section {
+    /* background-image: url("../../assets/images/projects-bg-mobile.jpg"); */
+    background-attachment: scroll; /* Better for mobile performance */
   }
 }
