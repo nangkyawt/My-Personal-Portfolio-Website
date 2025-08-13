@@ -196,8 +196,9 @@ body.dark-mode #contactme h1 {
 }
 
 body.dark-mode .social-icons-container {
-  background-color: #0D0821; /* Darker color to match other sections */
+  background-color: #0D0821; 
 }
+
 
 body.dark-mode .socialicons {
   background-color: #0D0821; /* Darker color to match other sections */

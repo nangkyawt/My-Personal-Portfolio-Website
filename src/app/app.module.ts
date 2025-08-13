@@ -10,6 +10,7 @@ import { ContactComponent } from './core/components/contact/contact.component';
 import { MyserviceComponent } from './core/components/myservice/myservice.component';
 import { MyprojectsComponent } from './core/components/myprojects/myprojects.component';
 import { PreloaderComponent } from './core/components/preloader/preloader.component';
+import { FloatingHomeComponent } from './floating-home/floating-home.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { PreloaderComponent } from './core/components/preloader/preloader.compon
     MyserviceComponent,
     MyprojectsComponent,
     PreloaderComponent,
+    FloatingHomeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

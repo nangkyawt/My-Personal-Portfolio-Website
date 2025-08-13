@@ -14,12 +14,12 @@
 
 .contact-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; 
   align-items: center;
   gap: 30px;
   flex-wrap: wrap; 
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto; 
 }
 
 .contact-form {
@@ -31,7 +31,9 @@
   border-radius: 10px;
   font-family: "Poppins", sans-serif;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 20px; 
 }
+
 
 .form-group {
   margin-bottom: 20px;
