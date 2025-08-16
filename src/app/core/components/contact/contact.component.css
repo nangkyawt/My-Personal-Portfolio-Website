@@ -98,3 +98,22 @@
   transform: scale(1.1);
   filter: brightness(1.2);
 }
+
+@media only screen and (max-width: 450px) {
+  .contact-container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+  }
+
+  .contact-title {
+    order: 1; /* Move the title below the form */
+    margin-top: 20px;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .contact-form {
+    order: 0; /* Form stays on top */
+    width: 100%;
+  }
+}
