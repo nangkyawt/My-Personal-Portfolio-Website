@@ -1,5 +1,5 @@
 .projects-section {
-  padding: 60px 20px;
+  padding: 40px 20px;
   /* background-image: url("../../assets/images/projects-bg-hd.jpg"); */
   background-size: cover;        /* Fills the section without stretching */
   background-position: center;   /* Keeps focus centered */
@@ -15,7 +15,7 @@
 .section-title {
   font-size: 2rem;
   color: #222222;
-  margin-bottom: 30px; 
+  margin-bottom: 40px; 
   font-family: "Poppins", sans-serif;
   text-align: center; 
 }
@@ -93,6 +93,7 @@
 @media (max-width: 576px) {
   .projects-grid {
     grid-template-columns: 1fr;
+    background-attachment: scroll; 
   }
 }
 @media (max-width: 768px) {

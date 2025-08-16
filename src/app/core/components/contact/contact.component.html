@@ -1,22 +1,24 @@
 <section id="contact" class="contact-section">
+  <h1 class="contact-title">Get in Touch</h1>
   <p class="contact-description">
-    If you have any questions or want to work together, feel free to send me a
-    message!
+    Have a question or want to collaborate? Let’s connect!
   </p>
 
   <div class="contact-container">
+    <!-- Contact Form -->
     <form
       action="https://api.web3forms.com/submit"
       method="POST"
       class="contact-form"
     >
+      <input
+        type="hidden"
+        name="access_key"
+        value="379e2bc6-dbca-4d5a-8dd0-8486837c8506"
+      />
+
       <div class="form-group">
         <label for="name">Name</label>
-        <input
-          type="hidden"
-          name="access_key"
-          value="379e2bc6-dbca-4d5a-8dd0-8486837c8506"
-        />
         <input
           type="text"
           id="name"
@@ -25,6 +27,7 @@
           required
         />
       </div>
+
       <div class="form-group">
         <label for="email">Email</label>
         <input
@@ -35,6 +38,7 @@
           required
         />
       </div>
+
       <div class="form-group">
         <label for="message">Message</label>
         <textarea
@@ -45,68 +49,41 @@
           required
         ></textarea>
       </div>
+
       <button type="submit" class="btn-submit">
         <i class="fas fa-paper-plane"></i> Send Message
       </button>
-    </form>
-    <div class="contact-image">
-      <img src="../../../../assets/images/mailvector.png" alt="Contact Me" />
-    </div>
-  </div>
-</section>
-<section id="contactme" class="contactme">
-  <div class="contact" id="contact">
-    <div class="background">
-      <div class="footerContainer">
-        <div class="socialicons">
-          <h1>Contact Me</h1>
-          <br />
-          <div class="social-icons-container mb-3">
-            <a
-              target="_blank"
-              href="https://www.facebook.com/nann.k.hlaing.5?mibextid=kFxxJD"
-            >
-              <img
-                src="../.././../../assets/images/facebook (1).png"
-                alt="Facebook"
-                width="50"
-                height="50"
-              />
-            </a>
 
-            <a
-              target="_blank"
-              href="https://www.instagram.com/arr_meee/profilecard/?igsh=MWllbmhidWtuMGFxNw=="
-            >
-              <img
-                src="../.././../../assets/images/instagram.png"
-                alt="Instagram"
-                width="50"
-                height="50"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/nangkyawthsuhlaing/"
-            >
-              <img
-                src="../.././../../assets/images/linkedin.png"
-                alt="github"
-                width="50"
-                height="50"
-              />
-            </a>
-            <a target="_blank" href="https://github.com/nangkyawt">
-              <img
-                src="../.././../../assets/images/github (1).png"
-                alt="github"
-                width="50"
-                height="50"
-              />
-            </a>
-          </div>
-        </div>
+      <!-- Social icons inline under the form -->
+      <div class="social-inline">
+        <a
+          href="https://www.facebook.com/nann.k.hlaing.5?mibextid=kFxxJD"
+          target="_blank"
+        >
+          <img
+            src="../.././../../assets/images/facebook (1).png"
+            alt="Facebook"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/arr_meee/profilecard/?igsh=MWllbmhidWtuMGFxNw=="
+          target="_blank"
+        >
+          <img
+            src="../.././../../assets/images/instagram.png"
+            alt="Instagram"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/nangkyawthsuhlaing/"
+          target="_blank"
+        >
+          <img src="../.././../../assets/images/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/nangkyawt" target="_blank">
+          <img src="../.././../../assets/images/github (1).png" alt="GitHub" />
+        </a>
       </div>
-    </div>
+    </form>
   </div>
 </section>
