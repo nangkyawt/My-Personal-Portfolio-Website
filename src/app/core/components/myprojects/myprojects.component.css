@@ -68,10 +68,18 @@
 }
 
 .project-description {
-  font-size: 1rem;
-  color: #666;
+  font-size: 1rem;             /* Standard readable size */
+  color: #444;                  /* Dark gray for a professional look */
+  line-height: 1.6;             /* Comfortable spacing */
   margin-bottom: 20px;
-  flex-grow: 1;
+  font-weight: 400;             /* Normal weight, not too light or bold */
+  text-align: justify;          /* Neat block alignment */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-card:hover .project-description {
+  color: #6439ff;               /* Accent color on hover */
+  transform: translateY(-2px);  /* Subtle lift effect */
 }
 
 .btn {

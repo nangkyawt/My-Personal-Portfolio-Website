@@ -1,5 +1,4 @@
 import { Component, HostListener } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-floating-home',
@@ -7,33 +6,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./floating-home.component.css'],
 })
 export class FloatingHomeComponent {
-  isSpinning = false;
-  constructor(private router: Router) {}
+  isVisible = false;
 
-  scrollToSection(sectionId: string) {
-    // If we're not already on the homepage, navigate first
-    if (this.router.url !== '/') {
-      this.router.navigate(['/']).then(() => {
-        this.scroll(sectionId);
-      });
-    } else {
-      this.scroll(sectionId);
-    }
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isVisible = window.scrollY > 200; // show after scrolling 200px
   }
 
-  private scroll(sectionId: string) {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }
-
-  spinButton() {
-    this.isSpinning = true;
-
-    setTimeout(() => {
-      this.isSpinning = false;
-      this.scrollToSection('home'); // scroll after animation
-    }, 1000); // duration matches CSS animation
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
