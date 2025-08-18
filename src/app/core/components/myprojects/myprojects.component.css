@@ -68,18 +68,20 @@
 }
 
 .project-description {
-  font-size: 1rem;             /* Standard readable size */
-  color: #444;                  /* Dark gray for a professional look */
-  line-height: 1.6;             /* Comfortable spacing */
+  font-size: 0.95rem;         /* Slightly smaller for mobile readability */
+  color: #444;
+  line-height: 1.6;
   margin-bottom: 20px;
-  font-weight: 400;             /* Normal weight, not too light or bold */
-  text-align: justify;          /* Neat block alignment */
-  transition: color 0.3s ease, transform 0.3s ease;
+  font-weight: 400;
+  text-align: left;            /* Change from justify to left for better mobile display */
+  word-wrap: break-word;       /* Ensures long words break properly */
 }
 
-.project-card:hover .project-description {
-  color: #6439ff;               /* Accent color on hover */
-  transform: translateY(-2px);  /* Subtle lift effect */
+@media (max-width: 576px) {
+  .project-description {
+    font-size: 0.9rem;         /* Slightly smaller for small screens */
+    line-height: 1.5;
+  }
 }
 
 .btn {
