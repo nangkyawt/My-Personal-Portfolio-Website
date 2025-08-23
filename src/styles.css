@@ -309,3 +309,74 @@ body.dark-mode .form-group label {
   font-weight: bold;
 color: #ffffff !important; 
 }
+
+
+body.dark-mode { @media (max-width: 768px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 60px;
+        right: 10px; 
+        background-color: rgba(0, 0, 0, 0.2); /* dark glass effect */
+        backdrop-filter: blur(10px); /* frosted glass effect */
+        -webkit-backdrop-filter: blur(10px); /* Safari support */
+        border-radius: 8px;
+        width: 250px; 
+        max-height: 300px; 
+        overflow-y: auto; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* darker shadow for contrast */
+        z-index: 1050;
+        padding: 10px;
+        transform: scale(0);
+        transform-origin: top right;
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+    }
+
+    .navbar-collapse.show {
+        transform: scale(1);
+        background-color: rgba(100, 57, 255, 0.2); /* purple glass effect when open */
+    }
+
+    .nav-item a {
+        padding: 5px 10px; 
+        font-size: 14px; 
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.05); /* subtle contrast on dark mode */
+        color: #fff; 
+        border-radius: 5px; 
+        transition: all 0.3s ease;
+        backdrop-filter: blur(5px); 
+    }
+
+    .nav-item a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #fff;
+    }
+
+    .nav-item a.active {
+        background-color: rgba(100, 57, 255, 0.4); 
+        color: #fff;
+    }
+
+    .menutoggle {
+        display: block;
+        font-size: 24px;
+        color: #fff;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .menutoggle:hover {
+        transform: scale(1.1);
+    }
+
+    .darkmodetoggle {
+        position: absolute;
+        top: 13px; 
+        right: 60px; 
+        z-index: 1050;
+        color: #fff;
+    }  
+
+   
+}}
