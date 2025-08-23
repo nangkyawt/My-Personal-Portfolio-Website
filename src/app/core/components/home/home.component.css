@@ -131,7 +131,7 @@
 }
 
 .skill-item {
-  background: linear-gradient(135deg, #7a61fc, #5b38d0);
+  background: transparent; /* or rgba(0,0,0,0) */
   padding: 12px;
   border-radius: 12px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease;
@@ -142,6 +142,7 @@
   position: relative;
   overflow: hidden;
 }
+
 
 .skill-item:before {
   content: '';
@@ -161,7 +162,7 @@
 .skill-item:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(135deg, #5b38d0, #7a61fc);
+  background: rgba(123, 97, 252, 0.2); /* subtle transparent hover */
 }
 
 .skill-item:hover:before {
