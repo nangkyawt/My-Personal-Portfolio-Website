@@ -71,7 +71,7 @@ body.dark-mode .about-image img:hover {
   }
 
   body.dark-mode #skills h2 {
-    color: #6439FF; 
+    color: #fbf8f8; 
   }
 /* 
   body.dark-mode .projects-section{
@@ -92,7 +92,7 @@ body.dark-mode .about-image img:hover {
   }
 
   body.dark-mode #projects .section-title {
-    color: #6439FF;
+    color: #fbf8f8;
   }
 
  /* .dark-mode .project-content {
@@ -107,7 +107,7 @@ body.dark-mode .services-section {
 }
 
 body.dark-mode #services h1 {
-  color:   #6439FF;
+  color:   #fbf8f8;
 }
 
 body.dark-mode .service-item {
@@ -192,7 +192,7 @@ body.dark-mode .btn-submit:hover {
 
 
 body.dark-mode #contactme h1 {
-  color: #6c63ff; /* Use the same soft purple as your highlight color */
+  color:#fbf8f8; /* Use the same soft purple as your highlight color */
 }
 
 body.dark-mode .social-icons-container {

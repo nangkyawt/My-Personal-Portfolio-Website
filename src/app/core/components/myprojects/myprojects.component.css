@@ -101,9 +101,35 @@
 }
 
 @media (max-width: 576px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-    background-attachment: scroll; 
+  .project-card {
+    padding: 12px;             
+    border-radius: 10px;
+  }
+
+  .project-image-wrapper {
+    height: 140px;             
+  }
+
+  .project-content {
+    padding: 12px;             
+  }
+
+  .project-title {
+    font-size: 1.1rem;          
+    margin-bottom: 6px;
+  }
+
+  .project-description {
+    font-size: 0.85rem;        
+    margin-bottom: 12px;
+    line-height: 1.4;
+    max-height: 70px;           
+    overflow: hidden;          
+  }
+
+  .btn {
+    padding: 8px 16px;         
+    font-size: 0.85rem;
   }
 }
 @media (max-width: 768px) {
@@ -111,4 +137,12 @@
     /* background-image: url("../../assets/images/projects-bg-mobile.jpg"); */
     background-attachment: scroll; /* Better for mobile performance */
   }
+  .project-card {
+  background-color: #fff; 
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
 }
