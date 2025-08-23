@@ -154,7 +154,7 @@
     .darkmodetoggle {
         position: absolute;
         top: 13px; 
-        right: 60px; 
+        right: 40px; 
         z-index: 1050;
         color: #6439FF;
     }  
