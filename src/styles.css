@@ -5,18 +5,31 @@
   }
 
   body.dark-mode .navbar {
-    background: rgba(10, 20, 59, 0.25); /* Same glass navy background */
+    background: rgba(10, 20, 59, 0.25);
     border-bottom: 1px solid rgba(255, 255, 255, 0.18); /* Frosty bottom border */
     backdrop-filter: blur(15px); /* Glass blur effect */
     -webkit-backdrop-filter: blur(15px); /* Safari support */
     box-shadow: 0 4px 30px rgba(31, 38, 135, 0.37); /* Soft glassy shadow */
   }
-  
+
   body.dark-mode .hero {
-    background-color: #160F30;
-    
+    background-color: #121026;
+
   }
-  
+
+body.dark-mode .navbar .nav-link {
+    color: #ffffff !important;
+}
+
+body.dark-mode .nav-item a:hover {
+  color: #6439FF;
+  background: rgba(100, 57, 255, 0.12); /* glass tint */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(100, 57, 255, 0.25);
+}
+
   body.dark-mode .greeting {
    color: #fbf8f8;
   }
@@ -24,17 +37,17 @@
   body.dark-mode .para {
     color: #fbf8f8;
    }
- 
+
 
 /* About me dark */
 body.dark-mode .aboutme-section {
-  background: #160F30; 
+  background: #121026;
   color: #e0e0e0;
 }
 
 /* body.dark-mode .about-content {
-  background: #1c1c1c; 
-  border: 1px solid #333; 
+  background: #1c1c1c;
+  border: 1px solid #333;
 } */
 
 body.dark-mode .about-content {
@@ -47,7 +60,7 @@ body.dark-mode .about-content {
 }
 
 body.dark-mode #about h1 {
-  color: #6439FF; 
+  color: #d3d0df;
 }
 
 body.dark-mode .about-text p {
@@ -62,48 +75,59 @@ body.dark-mode .about-image img:hover {
 }
 
   body.dark-mode .skills-section {
-    background-color:#160F30;
-  
-  } 
+    background-color:#121026;
+
+  }
 
   #skills h2 {
     color: #000000;
   }
 
   body.dark-mode #skills h2 {
-    color: #fbf8f8; 
+    color: #fbf8f8;
   }
-/* 
+
+   body.dark-mode #skills p {
+    color: #fbf8f8;
+  }
+/*
   body.dark-mode .projects-section{
     background-color: #160F30;
     color: #cccccc;
   } */
 
-/* testing */
-  body.dark-mode .projects-section{
-    background-image: url('../src/assets/images/space.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
+body.dark-mode .projects-section {
+  background: #121026;
+  position: relative; /* keep galaxy background positioning */
+  color: #f4f4f4;     /* default text color for the section */
+}
   body.dark-mode #projects p {
-    color: black; 
-  }
+  color: #d1d1d6;
+}
 
   body.dark-mode #projects .section-title {
     color: #fbf8f8;
   }
 
+
+body.dark-mode .project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+}
  /* .dark-mode .project-content {
-  background-color: #2c2c2c; 
+  background-color: #2c2c2c;
   border: 1px solid rgba(255, 255, 255, 0.3);
  } */
+body.dark-mode .projects-section .galaxy-bg {
+  opacity: 0.18;
+  filter: blur(0.5px);
+}
 
- 
 
 body.dark-mode .services-section {
-  background: #160F30; 
+  background: #121026;
 }
 
 body.dark-mode #services h1 {
@@ -125,7 +149,7 @@ body.dark-mode #services p {
 
 /* contact   */
 body.dark-mode .contact-section {
-  background: #160F30;
+  background: #121026;
 }
 
 body.dark-mode .contact-description {
@@ -136,8 +160,8 @@ body.dark-mode .contact-container {
   background: none;}
 
 /* body.dark-mode .contact-form {
-  background: #1e1e1e; 
-  color: #e0e0e0; 
+  background: #1e1e1e;
+  color: #e0e0e0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 } */
 
@@ -175,7 +199,7 @@ body.dark-mode .form-group textarea:focus {
 }
 
 body.dark-mode .btn-submit {
-  background: rgba(108, 99, 255, 0.8); /* Soft purple glass button */
+  background: rgba(108, 99, 255, 0.8);
   color: #ffffff;
   border: none;
   padding: 12px 24px;
@@ -196,7 +220,7 @@ body.dark-mode #contactme h1 {
 }
 
 body.dark-mode .social-icons-container {
-  background-color: #0D0821; 
+  background-color: #0D0821;
 }
 
 
@@ -208,7 +232,7 @@ body.dark-mode .socialicons {
 
 /* Dark Mode - Project Card Only */
 body.dark-mode .project-card {
-  background: rgba(22, 15, 48, 0.75); 
+  background: rgba(22, 15, 48, 0.75);
   border-radius: 10px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
   overflow: hidden;
@@ -300,14 +324,14 @@ body.dark-mode .form-group textarea {
   font-size: 1rem;
   color: #ddd;
   transition: border-color 0.3s ease;
-  color: #ffffff !important; 
+  color: #ffffff !important;
   background-color: inherit;
 }
 
 body.dark-mode .form-group label {
   font-size: 0.9rem;
   font-weight: bold;
-color: #ffffff !important; 
+color: #ffffff !important;
 }
 
 
@@ -315,14 +339,14 @@ body.dark-mode { @media (max-width: 768px) {
     .navbar-collapse {
         position: absolute;
         top: 60px;
-        right: 10px; 
+        right: 10px;
         background-color: rgba(0, 0, 0, 0.2); /* dark glass effect */
         backdrop-filter: blur(10px); /* frosted glass effect */
         -webkit-backdrop-filter: blur(10px); /* Safari support */
         border-radius: 8px;
-        width: 250px; 
-        max-height: 300px; 
-        overflow-y: auto; 
+        width: 250px;
+        max-height: 300px;
+        overflow-y: auto;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* darker shadow for contrast */
         z-index: 1050;
         padding: 10px;
@@ -337,14 +361,14 @@ body.dark-mode { @media (max-width: 768px) {
     }
 
     .nav-item a {
-        padding: 5px 10px; 
-        font-size: 14px; 
+        padding: 5px 10px;
+        font-size: 14px;
         text-align: center;
         background-color: rgba(255, 255, 255, 0.05); /* subtle contrast on dark mode */
-        color: #fff; 
-        border-radius: 5px; 
+        color: #fff;
+        border-radius: 5px;
         transition: all 0.3s ease;
-        backdrop-filter: blur(5px); 
+        backdrop-filter: blur(5px);
     }
 
     .nav-item a:hover {
@@ -353,7 +377,7 @@ body.dark-mode { @media (max-width: 768px) {
     }
 
     .nav-item a.active {
-        background-color: rgba(100, 57, 255, 0.4); 
+        background-color: rgba(100, 57, 255, 0.4);
         color: #fff;
     }
 
@@ -372,11 +396,11 @@ body.dark-mode { @media (max-width: 768px) {
 
     .darkmodetoggle {
         position: absolute;
-        top: 13px; 
-        right: 40px; 
+        top: 13px;
+        right: 40px;
         z-index: 1050;
         color: #fff;
-    }  
+    }
 
-   
+
 }}

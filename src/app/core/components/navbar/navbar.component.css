@@ -1,35 +1,35 @@
 .navbar {
-    background: #f4f1f1; 
-    color: #000000; 
-    padding: 12px 30px; 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    background: #f4f1f1;
+    color: #000000;
+    padding: 12px 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 
 .navbar-brand {
-    color: #6439FF; 
+    color: #6439FF;
     font-weight: bold;
-    font-size: 26px; 
+    font-size: 26px;
     transition: color 0.3s ease;
 }
 
 .icon-button:hover {
-    color: #4528A0; 
+    color: #4528A0;
   }
-  
+
 
 .navbar-nav{
     gap: 20px;
 }
 
 .navbar-brand:hover {
-    color: #4528A0; 
+    color: #4528A0;
 }
 
 
 .nav-item a {
-    color: #6439FF; 
+    color: #6439FF;
     font-weight: 500;
     text-decoration: none;
     font-size: 16px;
@@ -39,35 +39,35 @@
 }
 
 .nav-item a:hover {
-    color: #ffffff; 
-    background-color: #6439FF; 
-    transform: translateY(-2px); 
+    color: #ffffff;
+    background-color: #6439FF;
+    transform: translateY(-2px);
 }
 
 .menutoggle{
     display: none;
     border-radius: 5px;
-    padding: 8px; 
-    transition: all 0.3s ease; 
+    padding: 8px;
+    transition: all 0.3s ease;
 }
 
 
 .darkmodetoggle {
-    border: none; 
-    background: none; 
-    padding: 5px; 
+    border: none;
+    background: none;
+    padding: 5px;
     cursor: pointer;
-    font-size: 1.5rem; 
-    color: #6439FF; 
-    margin-right: 10px; 
+    font-size: 1.5rem;
+    color: #6439FF;
+    margin-right: 10px;
     transition: color 0.3s ease;
   }
 
 
 .nav-item a.active:hover {
-    background-color:  #6439FF; 
+    background-color:  #6439FF;
     color: white;
-    transform: translateY(-2px); 
+    transform: translateY(-2px);
 }
 
 /* .nav-item a, .nav-item a.active {
@@ -79,12 +79,12 @@
 
 #darkModeToggle {
     margin-right: 10px;
-    padding: 5px 10px; 
+    padding: 5px 10px;
     background: transparent;
     cursor: pointer;
-  
+
   }
-  
+
 .navbar-toggler {
     border-color: transparent;
   }
@@ -93,12 +93,12 @@
     .navbar-collapse {
         position: absolute;
         top: 60px;
-        right: 10px; 
+        right: 10px;
         background-color: rgba(255, 255, 255, 0.95);
         border-radius: 8px;
-        width: 250px; 
-        max-height: 300px; 
-        overflow-y: auto; 
+        width: 250px;
+        max-height: 300px;
+        overflow-y: auto;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         z-index: 1050;
         padding: 10px;
@@ -111,34 +111,34 @@
     }
 
     .navbar-nav {
-        flex-direction: column; 
-        gap: 10px; 
-        align-items: center; 
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
         border: none;
-   
+
     }
 
     .nav-item a {
-        padding: 5px 10px; 
-        font-size: 14px; 
+        padding: 5px 10px;
+        font-size: 14px;
         text-align: center;
         background-color: rgba(255, 255, 255, 0.8);
-        color: #6439FF; 
-        border-radius: 5px; 
+        color: #6439FF;
+        border-radius: 5px;
         transition: all 0.3s ease;
-        backdrop-filter: blur(5px); 
+        backdrop-filter: blur(5px);
     }
     .nav-item a:hover {
-        background: rgba(100, 57, 255, 0.1); 
+        background: rgba(100, 57, 255, 0.1);
         color: #6439FF;
         border-color: #6439FF;
     }
     .nav-item a.active {
-        background-color: rgba(100, 57, 255, 0.7); 
+        background-color: rgba(100, 57, 255, 0.7);
         color: #fff;
         border-radius: 5px;
      }
-  
+
     .menutoggle {
         display: block;
         font-size: 24px;
@@ -153,12 +153,12 @@
 
     .darkmodetoggle {
         position: absolute;
-        top: 13px; 
-        right: 40px; 
+        top: 13px;
+        right: 40px;
         z-index: 1050;
         color: #6439FF;
-    }  
-    
+    }
+
 }
 
 

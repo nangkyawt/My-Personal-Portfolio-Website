@@ -1,11 +1,11 @@
 <app-navbar></app-navbar>
-<section class="hero d-flex align-items-center" id="home">
+<!-- <section class="hero d-flex align-items-center" id="home">
   <div class="container text-center text-md-left">
     <div class="row align-items-center">
       <div class="col-md-6">
         <h1>
           <span class="greeting">Hello, I'm</span> <br />
-          <span class="name highlight animated-text"
+          <span class="name-animate"
             >Nang Kyawt Hsu Hlaing</span
           >
         </h1>
@@ -36,7 +36,54 @@
       </div>
     </div>
   </div>
+</section> -->
+
+<section class="hero d-flex align-items-center" id="home">
+  <!-- 🌌 ADD THIS ONLY -->
+  <div class="galaxy-bg"></div>
+
+  <!-- 👇 EVERYTHING BELOW IS 100% YOUR ORIGINAL CODE -->
+  <div class="container text-center text-md-left">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1>
+          <span class="greeting">Hello, I'm</span> <br />
+          <span class="name-animate">Nang Kyawt Hsu Hlaing</span>
+        </h1>
+
+        <p class="para">
+          A passionate MEAN stack developer dedicated to creating beautiful and
+          functional digital experiences.
+        </p>
+
+        <div class="mt-4">
+          <button (click)="downloadCV()" class="btn btn-primary btn-lg">
+            <i class="fas fa-file-export"></i> Download CV
+          </button>
+          <a
+            href="#contact"
+            class="btn btn-outline-primary btn-lg"
+            (click)="scrollToSection('contact')"
+            routerLinkActive="active"
+          >
+            Contact Me
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <img
+          src="../../../../assets/images/codinggirl.png"
+          alt="Hero Illustration"
+          class="img-fluid rounded-circle"
+        />
+      </div>
+    </div>
+  </div>
 </section>
+
+
+
 <app-aboutme></app-aboutme>
 <section id="skills" class="skills-section">
   <h2>Skills & Tools</h2>
