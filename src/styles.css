@@ -42,7 +42,8 @@ body.dark-mode .nav-item a:hover {
 /* About me dark */
 body.dark-mode .aboutme-section {
   background: #121026;
-  color: #e0e0e0;
+  /* color: #e0e0e0; */
+  color: #fff;
 }
 
 /* body.dark-mode .about-content {
