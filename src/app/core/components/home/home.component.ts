@@ -8,6 +8,7 @@ import { jsPDF } from 'jspdf';
 })
 export class HomeComponent {
   skills: any;
+  // this is generated with jsPDF
 //  downloadCV(): void {
 //   const doc = new jsPDF();
 
@@ -112,10 +113,9 @@ export class HomeComponent {
 //   doc.save('Nang_Kyawt_Hsu_Hlaing_CV.pdf');
 // }
 downloadCV(): void {
-  const fileURL = 'https://drive.google.com/uc?export=download&id=1pE3LFNxpiWxc8aKiyYsXrqcyrhE4f_4z';
+  const fileURL = 'https://docs.google.com/document/d/1PTP76lKWTWB9xVWe5-51em2zrF1qt_dtYlLX5efXoXE/export?format=pdf'
   window.open(fileURL, '_blank');
 }
-
 
 
   scrollToSection(sectionId: string): void {
