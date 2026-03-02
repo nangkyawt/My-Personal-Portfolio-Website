@@ -136,7 +136,7 @@ body.dark-mode #services h1 {
 }
 
 body.dark-mode .service-item {
-  background: rgba(10, 20, 59, 0.25); /* Same deep navy transparent glass */
+  background: rgba(10, 20, 59, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.18); /* Frosty border */
   backdrop-filter: blur(15px); /* Strong blur effect */
   -webkit-backdrop-filter: blur(15px); /* Safari support */
@@ -184,7 +184,7 @@ body.dark-mode .form-group label {
 body.dark-mode .form-group input,
 body.dark-mode .form-group textarea {
   background: rgba(10, 20, 59, 0.25); /* Same glass navy background */
-  color: #ffffff; /* Text stays white */
+  color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.18); /* Frosty light border */
   backdrop-filter: blur(10px); /* Light blur inside inputs */
   -webkit-backdrop-filter: blur(10px); /* Safari support */
@@ -228,7 +228,6 @@ body.dark-mode .social-icons-container {
 body.dark-mode .socialicons {
   background-color: #0D0821; /* Darker color to match other sections */
 }
-
 
 
 /* Dark Mode - Project Card Only */
@@ -336,19 +335,22 @@ color: #ffffff !important;
 }
 
 
-body.dark-mode { @media (max-width: 768px) {
-    .navbar-collapse {
+/* ================= DARK MODE MOBILE TOGGLES ================= */
+@media (max-width: 768px) {
+
+    /* Navbar collapse background in dark mode */
+    body.dark-mode .navbar-collapse {
         position: absolute;
         top: 60px;
         right: 10px;
         background-color: rgba(0, 0, 0, 0.2); /* dark glass effect */
-        backdrop-filter: blur(10px); /* frosted glass effect */
-        -webkit-backdrop-filter: blur(10px); /* Safari support */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         border-radius: 8px;
         width: 250px;
         max-height: 300px;
         overflow-y: auto;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* darker shadow for contrast */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
         z-index: 1050;
         padding: 10px;
         transform: scale(0);
@@ -356,52 +358,78 @@ body.dark-mode { @media (max-width: 768px) {
         transition: transform 0.3s ease-in-out, background-color 0.3s ease;
     }
 
-    .navbar-collapse.show {
+    /* Navbar open state */
+    body.dark-mode .navbar-collapse.show {
         transform: scale(1);
-        background-color: rgba(100, 57, 255, 0.2); /* purple glass effect when open */
+        background-color: rgba(100, 57, 255, 0.2); /* purple glass effect */
     }
 
-    .nav-item a {
+    /* Nav links in dark mode */
+    body.dark-mode .nav-item a {
         padding: 5px 10px;
         font-size: 14px;
         text-align: center;
-        background-color: rgba(255, 255, 255, 0.05); /* subtle contrast on dark mode */
+        background-color: rgba(255, 255, 255, 0.05);
         color: #fff;
         border-radius: 5px;
         transition: all 0.3s ease;
         backdrop-filter: blur(5px);
     }
 
-    .nav-item a:hover {
+    body.dark-mode .nav-item a:hover {
         background-color: rgba(255, 255, 255, 0.1);
         color: #fff;
     }
 
-    .nav-item a.active {
+    body.dark-mode .nav-item a.active {
         background-color: rgba(100, 57, 255, 0.4);
         color: #fff;
     }
 
-    .menutoggle {
+    body.dark-mode .nav-item a.home-btn,
+    body.dark-mode .nav-item a.home-btn.active {
+        background-color: #6439FF;
+        color: #ffffff;
+        transform: none;
+    }
+
+    /* Hamburger / menu toggle button */
+    body.dark-mode .menutoggle {
         display: block;
         font-size: 24px;
         color: #fff;
-        border: none;
-        background: transparent;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+        padding: 6px 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.3);
         cursor: pointer;
+        transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .menutoggle:hover {
+    body.dark-mode .menutoggle:hover {
         transform: scale(1.1);
+        background: rgba(255, 255, 255, 0.15);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     }
 
-    .darkmodetoggle {
-        position: absolute;
-        top: 13px;
-        right: 40px;
-        z-index: 1050;
-        color: #fff;
-    }
+    /* Dark mode toggle (sun/moon icon) */
+   body.dark-mode .menutoggle {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    border: 2px solid rgba(100, 57, 255, 0.6);
+    border-radius: 8px;
+    padding: 6px 8px;
+    background: rgba(0,0,0,0.1);
+    text-shadow: 0 0 5px rgba(255,255,255,0.3);
+    box-shadow: 0 0 12px rgba(100, 57, 255, 0.5);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
 
+body.dark-mode .menutoggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 18px rgba(100, 57, 255, 0.8);
+}
 
-}}
+}

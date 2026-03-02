@@ -3,7 +3,8 @@
   justify-content: center;
   align-items: center;
   padding: 40px 20px;
-  background: linear-gradient(135deg, #6c63ff, #8c7eff);
+  /* background: linear-gradient(135deg, #6c63ff, #8c7eff); */
+  background-color: #6c63ff;
   color: #1c1616;
   font-family: "Poppins", sans-serif;
   min-height: 80vh;
@@ -57,7 +58,7 @@
   display: block;
   width: 50px;
   height: 3px;
-  background: #fff;
+  background: #6c63ff;
   margin-top: 10px;
 }
 

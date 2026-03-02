@@ -7,7 +7,7 @@
 
 .contact-section {
   padding: 30px 20px;
-  background: linear-gradient(135deg, rgba(108,99,255,0.7), rgba(81,70,217,0.7));
+  background: #6c63ff;
   text-align: center;
   color: #fff;
   position: relative; /* needed for absolute stars */

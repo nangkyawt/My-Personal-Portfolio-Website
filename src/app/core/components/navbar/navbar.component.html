@@ -8,11 +8,11 @@
       id="navbarNavDropdown"
     >
       <ul class="navbar-nav">
-        <li class="nav-item">
+        <li class="nav-item home">
           <a
-            class="nav-link"
+            class="nav-link home-btn"
             (click)="scrollToSection('home')"
-            routerLinkActive="active"
+
             >Home</a
           >
         </li>
@@ -20,7 +20,7 @@
           <a
             class="nav-link"
             (click)="scrollToSection('about')"
-            routerLinkActive="active"
+
             >About</a
           >
         </li>
@@ -28,7 +28,7 @@
           <a
             class="nav-link"
             (click)="scrollToSection('services')"
-            routerLinkActive="active"
+
             >Service</a
           >
         </li>
@@ -49,11 +49,11 @@
         class="darkmodetoggle"
         (click)="toggleDarkMode()"
       >
-        <!-- <i
+        <i
           id="darkModeIcon"
           class="fas"
           [ngClass]="isDarkMode ? 'fa-sun' : 'fa-moon'"
-        ></i> -->
+        ></i>
       </button>
       <button
         class="menutoggle navbar-toggler"

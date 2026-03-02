@@ -1,5 +1,5 @@
 .hero {
-  background: #f4f1f1;
+  background: #fff;
   color: #333333;
   height: 100vh;
   display: flex;
@@ -11,8 +11,6 @@
   position: relative;
   overflow: hidden;
 }
-
-
 
 
 .hero-content {
