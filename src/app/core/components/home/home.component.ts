@@ -8,111 +8,115 @@ import { jsPDF } from 'jspdf';
 })
 export class HomeComponent {
   skills: any;
-  downloadCV(): void {
-    console.log('Download CV');
-    const doc = new jsPDF();
+//  downloadCV(): void {
+//   const doc = new jsPDF();
 
-    // Header: Name and Job Title
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(24);
-    doc.text('Nang Kyawt Hsu Hlaing', 105, 20, { align: 'center' });
+//   // ========== HEADER: Name ==========
+//   doc.setFont('helvetica', 'bold');
+//   doc.setFontSize(24);
+//   doc.text('Nang Kyawt Hsu Hlaing', 105, 20, { align: 'center' });
 
-    // Contact Information
-    doc.setFont('helvetica', 'normal');
-    doc.setFontSize(12);
-    doc.text('Email: nangkyawthsuhlaing@gmail.com', 105, 30, {
-      align: 'center',
-    });
-    doc.text('Phone: 09-752961610', 105, 40, { align: 'center' });
+//   doc.setFont('helvetica', 'normal');
+//   doc.setFontSize(12);
+//   doc.text('Email: nangkyawthsuhlaing@gmail.com', 105, 30, { align: 'center' });
+//   doc.text('Phone: 09-752961610', 105, 38, { align: 'center' });
 
-    // Horizontal Line
-    doc.setLineWidth(0.5);
-    doc.line(15, 55, 195, 55);
+//   // Horizontal line
+//   doc.setLineWidth(0.5);
+//   doc.line(15, 45, 195, 45);
 
-    // Profile Section
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(14);
-    doc.text('Profile', 20, 65);
+//   // ========== PROFILE ==========
+//   doc.setFont('helvetica', 'bold');
+//   doc.setFontSize(14);
+//   doc.text('Profile', 20, 55);
 
-    doc.setFont('helvetica', 'normal');
-    doc.setFontSize(12);
-    const profile = `
-I am an adaptable, extroverted, and team-oriented junior developer with experience in building dynamic web applications using Angular. My strong foundation in JavaScript, HTML, and CSS, combined with my passion for problem-solving and fostering positive team environments, enables me to thrive in collaborative development projects.
-As an extrovert, I excel at building strong connections within teams, facilitating open communication, and ensuring a supportive environment for collaboration. In internship, I developed a student form feature using API, honing my skills in API integration and Angular development while actively engaging with teammates to deliver efficient solutions.
-I am eager to bring my skills and outgoing nature to a junior developer role, contributing to innovative projects that promote inclusivity and enhance team dynamics, while continuing to grow as a professional.
-    `;
-    doc.text(profile, 25, 70, { maxWidth: 170, align: 'left' });
+//   doc.setFont('helvetica', 'normal');
+//   doc.setFontSize(12);
+//   const profile = `
+// Adaptable and team-oriented junior developer with experience in building web applications using Angular, JavaScript, HTML, and CSS.
+// Strong in problem-solving, teamwork, and effective communication.
+// Developed student form feature during internship with API integration and actively collaborated with teammates.
+// Eager to contribute to innovative projects and grow professionally.
+//   `;
+//   doc.text(profile, 25, 60, { maxWidth: 170, align: 'left' });
 
-    // Education Section
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(14);
-    doc.text('Education', 20, 140);
+//   // ========== EDUCATION ==========
+//   doc.setFont('helvetica', 'bold');
+//   doc.setFontSize(14);
+//   doc.text('Education', 20, 110);
 
-    doc.setFont('helvetica', 'normal');
-    doc.setFontSize(12);
-    doc.text('Bachelor of Science in Mathematics (2018-2019)', 25, 150);
-    doc.text('- Mandalar University', 25, 155);
+//   doc.setFont('helvetica', 'normal');
+//   doc.setFontSize(12);
+//   doc.text('- B.Sc. Mathematics (2018-2019), Mandalar University', 25, 120);
+//   doc.text('- B.Sc. Computer Science (2024), University of the People', 25, 130);
 
-    doc.text(
-      'Bachelor of Science in Computer Science in University of The People (2024)',
-      25,
-      160
-    );
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(14);
-    doc.text('Languages: Myanmar and English', 20, 175);
+//   // ========== LANGUAGES ==========
+//   doc.setFont('helvetica', 'bold');
+//   doc.setFontSize(14);
+//   doc.text('Languages', 20, 145);
+//   doc.setFont('helvetica', 'normal');
+//   doc.setFontSize(12);
+//   doc.text('- Myanmar (native)', 25, 155);
+//   doc.text('- English (fluent)', 25, 160);
 
-    // Skills Section
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(14);
-    doc.text('Skills', 20, 185);
+//   // ========== SKILLS ==========
+//   doc.setFont('helvetica', 'bold');
+//   doc.setFontSize(14);
+//   doc.text('Soft Skills', 20, 175);
+//   doc.setFont('helvetica', 'normal');
+//   doc.setFontSize(12);
+//   const skills = [
+//     '- Problem Solving',
+//     '- Teamwork',
+//     '- Effective Communication',
+//     '- Time Management',
+//   ];
+//   skills.forEach((skill, i) => doc.text(skill, 25, 185 + i * 8));
 
-    doc.setFont('helvetica', 'normal');
-    const skills = [
-      '- Problem-Solving',
-      '- Teamwork',
-      '- Effective Communication',
-      '- Time Management',
-    ];
-    skills.forEach((skill, index) => {
-      doc.text(skill, 25, 195 + index * 10);
-    });
+//   // ========== TECHNICAL SKILLS ==========
+//   doc.setFont('helvetica', 'bold');
+//   doc.setFontSize(14);
+//   doc.text('Technical Skills', 20, 220);
+//   doc.setFont('helvetica', 'normal');
+//   doc.setFontSize(12);
+//   const technicalSkills = ['- Angular', '- Node.js', '- PostgreSQL', '- Bootstrap'];
+//   technicalSkills.forEach((techSkill, i) => doc.text(techSkill, 25, 230 + i * 8));
 
-    // Technical Skills Section
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(14);
-    doc.text('Technical Skills', 20, 235);
+//   // ========== EXPERIENCE / INTERNSHIP ==========
+//   doc.setFont('helvetica', 'bold');
+//   doc.setFontSize(14);
+//   doc.text('Experience & Internship', 20, 265);
+//   doc.setFont('helvetica', 'normal');
+//   doc.setFontSize(12);
+//   const experience = `
+// - Internship at Myanmar Information Technology (Dec 2022 - Feb 2023)
+//   Developed student form feature, integrated APIs, collaborated in team projects.
+//   `;
+//   doc.text(experience, 25, 275, { maxWidth: 170, align: 'left' });
 
-    doc.setFont('helvetica', 'normal');
-    const technicalSkills = [
-      '- Angular',
-      '- Node.js',
-      '- PostgreSQL',
-      '- Bootstrap',
-    ];
-    technicalSkills.forEach((techSkill, index) => {
-      doc.text(techSkill, 25, 245 + index * 10);
-    });
+//   // ========== PORTFOLIO ==========
+//   doc.setFont('helvetica', 'bold');
+//   doc.setFontSize(14);
+//   doc.text('Portfolio', 20, 300);
+//   doc.setFont('helvetica', 'normal');
+//   doc.setFontSize(12);
+//   doc.text('- GitHub: https://github.com/nangkyawthsu', 25, 310);
+//   doc.text('- LinkedIn: https://www.linkedin.com/in/nangkyawt/', 25, 320);
 
-    // Footer
-    doc.setFont('helvetica', 'italic');
-    doc.setFontSize(10);
-    doc.text('Generated with jsPDF - Nang Kyawt Hsu Hlaing', 105, 310, {
-      align: 'center',
-    });
+//   // ========== FOOTER ==========
+//   doc.setFont('helvetica', 'italic');
+//   doc.setFontSize(10);
+//   doc.text('Generated with jsPDF - Nang Kyawt Hsu Hlaing', 105, 330, { align: 'center' });
 
-    doc.text(
-      'For more information, contact: nangkyawthsuhlaing@gmail.com',
-      105,
-      320,
-      {
-        align: 'center',
-      }
-    );
+//   // Save PDF
+//   doc.save('Nang_Kyawt_Hsu_Hlaing_CV.pdf');
+// }
+downloadCV(): void {
+  const fileURL = 'https://drive.google.com/uc?export=download&id=1pE3LFNxpiWxc8aKiyYsXrqcyrhE4f_4z';
+  window.open(fileURL, '_blank');
+}
 
-    // Save the PDF
-    doc.save('Nang_Kyawt_Hsu_Hlaing_CV.pdf');
-  }
+
 
   scrollToSection(sectionId: string): void {
     const element = document.getElementById(sectionId);
