@@ -11,6 +11,8 @@ import { MyserviceComponent } from './core/components/myservice/myservice.compon
 import { MyprojectsComponent } from './core/components/myprojects/myprojects.component';
 import { PreloaderComponent } from './core/components/preloader/preloader.component';
 import { FloatingHomeComponent } from './floating-home/floating-home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -23,8 +25,17 @@ import { FloatingHomeComponent } from './floating-home/floating-home.component';
     MyprojectsComponent,
     PreloaderComponent,
     FloatingHomeComponent,
+
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [ BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+   ToastrModule.forRoot({
+  positionClass: 'toast-bottom-right',
+  timeOut: 3000,
+  closeButton: true,
+  progressBar: true,
+}),],
   providers: [],
   bootstrap: [AppComponent],
 })

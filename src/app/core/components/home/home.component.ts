@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 import { jsPDF } from 'jspdf';
 
 @Component({
@@ -112,11 +113,15 @@ export class HomeComponent {
 //   // Save PDF
 //   doc.save('Nang_Kyawt_Hsu_Hlaing_CV.pdf');
 // }
-downloadCV(): void {
-  const fileURL = 'https://docs.google.com/document/d/1PTP76lKWTWB9xVWe5-51em2zrF1qt_dtYlLX5efXoXE/export?format=pdf'
-  window.open(fileURL, '_blank');
-}
 
+  constructor(private toastr: ToastrService) {}
+
+  downloadCV(): void {
+    const fileURL = 'https://docs.google.com/document/d/1PTP76lKWTWB9xVWe5-51em2zrF1qt_dtYlLX5efXoXE/export?format=pdf';
+    window.open(fileURL, '_blank');
+    // Show professional toast notification
+   this.toastr.success('Thanks for checking my CV!', 'Download Started 🚀');
+  }
 
   scrollToSection(sectionId: string): void {
     const element = document.getElementById(sectionId);

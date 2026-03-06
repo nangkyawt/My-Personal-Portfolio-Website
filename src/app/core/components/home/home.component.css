@@ -291,6 +291,27 @@ animation: galaxyMove 10s linear infinite alternate, twinkle 2s ease-in-out infi
   z-index: 1;
 }
 
+.cv-download-notification {
+  position: fixed;       /* stays visible even when scrolling */
+  top: 70px;             /* adjust to match navbar height */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #67da82; /* green for success */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeSlide 0.5s ease; /* optional animation */
+}
+
+/* Optional: slide down + fade effect */
+@keyframes fadeSlide {
+  0% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+  100% { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
 
 /* Twinkling stars */
 /* @keyframes twinkle {
