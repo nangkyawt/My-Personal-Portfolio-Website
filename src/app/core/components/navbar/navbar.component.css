@@ -1,5 +1,14 @@
 .navbar {
-    background: #f4f1f1;
+    background: rgba(255, 255, 255, 0.6); /* transparent white */
+    color: #000000;
+    padding: 12px 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     color: #000000;
     padding: 12px 30px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);

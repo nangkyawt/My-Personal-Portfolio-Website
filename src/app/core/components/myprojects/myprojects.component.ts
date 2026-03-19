@@ -13,8 +13,6 @@ export class MyprojectsComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.initObserver();
-
-    // 🔥 WATCH dark-mode changes
     const body = document.body;
     const mutationObserver = new MutationObserver(() => {
       this.resetAnimations();

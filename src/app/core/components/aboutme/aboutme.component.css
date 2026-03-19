@@ -1,28 +1,31 @@
+
 .aboutme-section {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px 20px;
-  /* background: linear-gradient(135deg, #6c63ff, #8c7eff); */
-  background-color: #6c63ff;
+  background: #5a52e6; /* soft light purple */
   color: #1c1616;
   font-family: "Poppins", sans-serif;
   min-height: 80vh;
-  position: relative;  /* for galaxy-bg positioning */
+  position: relative;
   overflow: hidden;
 }
 
 .about-content {
+  background: rgba(255, 255, 255, 0.2); /* frosted glass effect */
   display: flex;
   align-items: center;
   gap: 40px;
   max-width: 1200px;
   flex-wrap: wrap;
-  padding: 30px;
-  border-radius: 15px;
-  animation: fadeIn 1.2s ease-in-out;
-  border: 2px solid  #6c63ff;
-  color: #0e0d11 !important;
+  padding: 40px;
+  border-radius: 25px; /* rounder corners for elegance */
+  border: 1px solid rgba(108, 99, 255, 0.5); /* soft purple border */
+  color: #1c1616 !important;
+  backdrop-filter: blur(15px); /* stronger blur for frosted effect */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08); /* subtle floating effect */
+  transition: all 0.4s ease;
 }
 
 .about-image img {
@@ -48,7 +51,7 @@
   /* letter-spacing: 1.5px; */
   position: relative;
   font-size: 1.9rem;
-  color: #222;
+  color: #ebe4e4;
   margin-bottom: 10px;
   font-family: "Poppins", sans-serif;
 }
@@ -67,6 +70,7 @@
 }
 
 .about-text p {
+  color: #ebe4e4;
   font-size: 1.2rem;
   line-height: 1.8;
   margin-bottom: 15px;
@@ -157,20 +161,22 @@
   }
 }
 
-.aboutme-section {
-  position: relative;  /* for galaxy-bg positioning */
-  overflow: hidden;    /* hide stars outside section */
+/* .aboutme-section {
+  position: relative;
+  overflow: hidden;
   padding: 60px 20px;
-  background: none;    /* optional: remove any background color/image */
-}
+  background: none;
+} */
 
 .aboutme-section .galaxy-bg {
- position: absolute;
+  display: block;
+  opacity: 0.18;
+  filter: blur(0.5px);
+  position: absolute;
   top: 50%;
   left: 50%;
   width: 1px;
   height: 1px;
-  background: #fff;
   border-radius: 50%;
   pointer-events: none;
   z-index: 0;

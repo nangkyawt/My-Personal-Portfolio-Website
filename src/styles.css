@@ -433,3 +433,52 @@ body.dark-mode .menutoggle:hover {
 }
 
 }
+
+/* ================= LIGHT MODE PROJECT CARDS ================= */
+body:not(.dark-mode) .project-card {
+  background: rgba(255, 255, 255, 0.8); /* Light glass card */
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body:not(.dark-mode) .project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+body:not(.dark-mode) .project-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+body:not(.dark-mode) .project-content {
+  padding: 15px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body:not(.dark-mode) .project-content h2 {
+  font-size: 1.4rem;
+  color: #222222; /* Dark text for titles */
+  margin-bottom: 8px;
+  font-family: "Poppins", sans-serif;
+}
+
+body:not(.dark-mode) .project-content p {
+  font-size: 0.95rem;
+  color: #444444; /* Darker paragraph text */
+  margin-bottom: 15px;
+  line-height: 1.4;
+  font-family: "Poppins", sans-serif;
+}

@@ -129,4 +129,22 @@ export class HomeComponent {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
+
+  ngAfterViewInit(): void {
+    // Intersection Observer for scroll reveal
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    // Animate all elements with .reveal or .skill-item
+    const revealElements = document.querySelectorAll('.reveal, .skill-item');
+    revealElements.forEach((el) => observer.observe(el));
+  }
 }
