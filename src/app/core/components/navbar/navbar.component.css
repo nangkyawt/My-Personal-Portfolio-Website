@@ -1,3 +1,4 @@
+
 .navbar {
     background: rgba(255, 255, 255, 0.6); /* transparent white */
     color: #000000;
@@ -101,7 +102,6 @@
     border-color: transparent;
 }
 
-
 @media (max-width: 768px) {
 
     .navbar-collapse {
@@ -159,7 +159,7 @@
     .nav-item a.home-btn.active {
         background-color: #6439FF;
         color: #ffffff;
-        transform: none; /* remove lift effect on mobile */
+        transform: none;
     }
 
     .menutoggle {

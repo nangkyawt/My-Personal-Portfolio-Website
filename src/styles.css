@@ -394,46 +394,10 @@ color: #ffffff !important;
     }
 
     /* Hamburger / menu toggle button */
-    body.dark-mode .menutoggle {
-        display: block;
-        font-size: 24px;
-        color: #fff;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 6px;
-        padding: 6px 8px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-        cursor: pointer;
-        transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
-    }
 
-    body.dark-mode .menutoggle:hover {
-        transform: scale(1.1);
-        background: rgba(255, 255, 255, 0.15);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-    }
 
-    /* Dark mode toggle (sun/moon icon) */
-   body.dark-mode .menutoggle {
-    display: block;
-    font-size: 24px;
-    color: #fff;
-    border: 2px solid rgba(100, 57, 255, 0.6);
-    border-radius: 8px;
-    padding: 6px 8px;
-    background: rgba(0,0,0,0.1);
-    text-shadow: 0 0 5px rgba(255,255,255,0.3);
-    box-shadow: 0 0 12px rgba(100, 57, 255, 0.5);
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
 
-body.dark-mode .menutoggle:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 18px rgba(100, 57, 255, 0.8);
-}
-
-}
-
+  }
 /* ================= LIGHT MODE PROJECT CARDS ================= */
 body:not(.dark-mode) .project-card {
   background: rgba(255, 255, 255, 0.8); /* Light glass card */
