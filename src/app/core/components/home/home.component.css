@@ -133,8 +133,8 @@ background:#e6e0ff;
 /* Strong upward scroll effect */
 .reveal-up {
   opacity: 0;
-  transform: translateY(100px) scale(0.95); /* start lower and slightly smaller */
-  transition: opacity 1s ease-out, transform 1s ease-out; /* slower and smooth */
+  transform: translateY(100px) scale(0.95);
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 .skill-item {
   position: relative;
@@ -142,9 +142,9 @@ background:#e6e0ff;
 }
 
 .skill-item:hover {
-  transform: translateY(-3px); /* smaller lift */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* softer shadow */
-  background: rgba(123, 97, 252, 0.12); /* lighter background */
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: rgba(123, 97, 252, 0.12);
 }
 
 .skill-item:before {

@@ -23,7 +23,7 @@ body.dark-mode .navbar .nav-link {
 
 body.dark-mode .nav-item a:hover {
   color: #6439FF;
-  background: rgba(100, 57, 255, 0.12); /* glass tint */
+  background: rgba(100, 57, 255, 0.12);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   transform: translateY(-2px);
@@ -276,7 +276,7 @@ body.dark-mode .project-content {
 
 body.dark-mode .project-content h2 {
   font-size: 1.4rem;
-  color: #e0e0e0; /* Light title text */
+  color: #e0e0e0;
   margin-bottom: 8px;
   font-family: "Poppins", sans-serif;
   text-align: left;
@@ -284,7 +284,7 @@ body.dark-mode .project-content h2 {
 
 body.dark-mode .project-content p {
   font-size: 0.95rem;
-  color: #ffffff !important;; /* Light paragraph text */
+  color: #ffffff !important;;
   margin-bottom: 15px;
   line-height: 1.4;
   font-family: "Poppins", sans-serif;
@@ -302,7 +302,7 @@ body.dark-mode .btn {
 }
 
 body.dark-mode .btn-primary {
-  background-color: #6439ff; /* Purple button */
+  background-color: #6439ff;
   color: #ffffff;
   border: 1px solid transparent;
 }
@@ -400,7 +400,7 @@ color: #ffffff !important;
   }
 /* ================= LIGHT MODE PROJECT CARDS ================= */
 body:not(.dark-mode) .project-card {
-  background: rgba(255, 255, 255, 0.8); /* Light glass card */
+  background: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
@@ -434,15 +434,34 @@ body:not(.dark-mode) .project-content {
 
 body:not(.dark-mode) .project-content h2 {
   font-size: 1.4rem;
-  color: #222222; /* Dark text for titles */
+  color: #222222;
   margin-bottom: 8px;
   font-family: "Poppins", sans-serif;
 }
 
 body:not(.dark-mode) .project-content p {
   font-size: 0.95rem;
-  color: #444444; /* Darker paragraph text */
+  color: #444444;
   margin-bottom: 15px;
   line-height: 1.4;
   font-family: "Poppins", sans-serif;
+}
+
+
+/* Dark mode */
+body.dark-mode .footer {
+background-color: rgba(10, 20, 59, 0.25);
+backdrop-filter: blur(15px);
+color: #ffffff;
+border-top: 1px solid rgba(255, 255, 255, 0.12);
+box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .footer .social-links a {
+  color: #8a63ff;
+}
+
+body.dark-mode .footer .social-links a:hover {
+  color: #6439FF;
+  transform: translateY(-2px);
 }
