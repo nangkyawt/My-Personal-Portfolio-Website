@@ -117,7 +117,7 @@ export class HomeComponent {
   constructor(private toastr: ToastrService) {}
 
   downloadCV(): void {
-    const fileURL = 'https://docs.google.com/document/d/1PTP76lKWTWB9xVWe5-51em2zrF1qt_dtYlLX5efXoXE/export?format=pdf';
+    const fileURL = 'https://drive.google.com/uc?export=download&id=1w3sPlTxYrDV1EskTwirWWy1yfQ1IfCC0';
     window.open(fileURL, '_blank');
     // Show professional toast notification
    this.toastr.success('Thanks for checking my CV!', 'Download Started 🚀');
