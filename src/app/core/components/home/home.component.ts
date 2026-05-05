@@ -117,10 +117,10 @@ export class HomeComponent {
   constructor(private toastr: ToastrService) {}
 
   downloadCV(): void {
-    const fileURL = 'https://drive.google.com/uc?export=download&id=1w3sPlTxYrDV1EskTwirWWy1yfQ1IfCC0';
+    const fileURL = 'https://drive.google.com/uc?export=download&id=1s0zBEFR8epTqmnnVmZzjyUFQC624hwkp';
     window.open(fileURL, '_blank');
     // Show professional toast notification
-   this.toastr.success('Thanks for checking my CV!', 'Download Started 🚀');
+   this.toastr.success('Thanks for checking my CV!', 'Download Started');
   }
 
   scrollToSection(sectionId: string): void {
